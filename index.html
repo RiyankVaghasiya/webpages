@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <style>
+      body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-21xl: 40px;
+  --font-size-11xl: 30px;
+  --font-size-xl: 20px;
+  --font-size-6xl: 25px;
+  --font-size-56xl: 75px;
+  --font-size-8xl: 27px;
+
+  /* Colors */
+  --color-gray-100: #777;
+  --color-gray-200: #201b1b;
+  --color-gray-300: #1f1c1a;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-plum: #c2adff;
+  --color-mediumblue: rgba(0, 56, 255, 0.2);
+
+  /* Border radiuses */
+  --br-xl: 20px;
+  --br-31xl: 50px;
+}
+
+      .home-page-child {
+  border: 0;
+  background-color: (--color-gray-200);
+  top: 324px;
+  border-radius: var(--br-xl);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  border-top: 1px solid var(--color-mediumblue);
+  border-right: 1.5px solid var(--color-mediumblue);
+  border-bottom: 4px solid var(--color-mediumblue);
+  border-left: 0.5px solid var(--color-mediumblue);
+  box-sizing: border-box;
+}
+.home-page-child,
+.home-page-inner,
+.home-page-item,
+.rectangle-button {
+  position: absolute;
+  left: 389px;
+  width: 700px;
+  height: 55px;
+}
+.home-page-item {
+  border: 0;
+  background-color: #ffffff;
+  top: 461px;
+  border-radius: var(--br-xl);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  border-top: 1px solid var(--color-mediumblue);
+  border-right: 1.5px solid var(--color-mediumblue);
+  border-bottom: 4px solid var(--color-mediumblue);
+  border-left: 0.5px solid var(--color-mediumblue);
+  box-sizing: border-box;
+}
+.home-page-inner,
+.rectangle-button {
+  cursor: pointer;
+  padding: 0;
+  border-radius: var(--br-31xl);
+}
+.home-page-inner {
+  border: 0;
+  background-color: var(--color-plum);
+  top: 589px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+}
+.rectangle-button {
+  border: 1px solid var(--color-mediumblue);
+  background-color: var(--color-gray-200);
+  top: 757px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+}
+.email-or-phone,
+.password {
+  position: absolute;
+  top: 274px;
+  left: 398px;
+  font-size: var(--font-size-6xl);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 251px;
+  height: 39px;
+}
+.password {
+  top: 415px;
+  left: 394px;
+}
+.sign-in {
+  top: 598px;
+  left: 608px;
+  font-size: var(--font-size-11xl);
+  color: var(--color-black);
+  justify-content: center;
+  width: 251px;
+}
+.new-to-techtolk,
+.or,
+.sign-in {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 39px;
+}
+.new-to-techtolk {
+  top: 767px;
+  left: 455px;
+  font-size: var(--font-size-11xl);
+  justify-content: center;
+  width: 556px;
+}
+.or {
+  top: 688px;
+  left: 723px;
+  font-size: 23px;
+  text-align: left;
+  width: 350px;
+}
+.forgot-password-txt-container {
+  line-break: anywhere;
+  width: 100%;
+}
+.forgot-password {
+  position: absolute;
+  top: 538px;
+  left: 394px;
+  font-size: 18px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 251px;
+  height: 39px;
+}
+.line-div {
+  position: absolute;
+  top: 708.5px;
+  left: 387.5px;
+  border-top: 3px solid var(--color-gray-100);
+  box-sizing: border-box;
+  width: 303px;
+  height: 3px;
+}
+.line-icon,
+.techtok {
+  position: absolute;
+  top: 707px;
+  left: 789.5px;
+  width: 300px;
+  height: 3px;
+}
+.techtok {
+  top: 37px;
+  left: 60px;
+  font-size: 65px;
+  color: #d7d6f3;
+  text-align: left;
+  display: inline-block;
+  width: 433px;
+  height: 133px;
+}
+.home-page-child1,
+.home-page-child2 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  top: 32px;
+  border-radius: var(--br-31xl);
+  width: 220px;
+  height: 50px;
+}
+.home-page-child1 {
+  left: 1160px;
+  box-shadow: 4px 4px 10px 4px #4e446a;
+  border-bottom: 10px solid var(--color-plum);
+  border-left: 5px solid var(--color-plum);
+  box-sizing: border-box;
+}
+.home-page-child2 {
+  left: 914px;
+   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset; 
+}
+.join-now,
+.sign-in1 {
+  text-decoration: none;
+  position: absolute;
+  top: 41px;
+  left: 1227px;
+  font-size: var(--font-size-8xl);
+  color: var(--color-black);
+}
+.join-now {
+  left: 967px;
+}
+.rectangle-div {
+  position: absolute;
+  top: 140px;
+  left: 380px;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-gray-200);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  border-top: 1.5px solid var(--color-mediumblue);
+  border-right: 7px solid var(--color-mediumblue);
+  border-bottom: 10px solid var(--color-mediumblue);
+  border-left: 1px solid var(--color-mediumblue);
+  box-sizing: border-box;
+  width: 1000px;
+  height: 90px;
+}
+.welcome-to-your {
+  position: absolute;
+  top: 169px;
+  left: 510px;
+  font-size: 45px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  width: 1303px;
+  height: 19px;
+}
+.home-page-child3 {
+  position: absolute;
+  top: 2704.5px;
+  left: 1386.5px;
+  border-top: 1px solid var(--color-white);
+  box-sizing: border-box;
+  width: 61px;
+  height: 1px;
+}
+.explore-collaborative-articles {
+  position: absolute;
+  top: 1183px;
+  left: 60px;
+  font-size: var(--font-size-56xl);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 492px;
+  height: 169px;
+}
+.home-page-child4,
+.home-page-child5 {
+  position: absolute;
+  top: calc(50% - 883px);
+  left: calc(50% - 137px);
+  border-radius: var(--br-31xl);
+  background-color: var(--color-gray-200);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--color-mediumblue);
+  box-sizing: border-box;
+  width: 150px;
+  height: 40px;
+}
+.home-page-child5 {
+  top: calc(50% - 821px);
+}
+.home-page-child6 {
+  top: calc(50% - 885px);
+  left: calc(50% + 399px);
+  width: 261px;
+}
+.home-page-child6,
+.home-page-child7,
+.home-page-child8,
+.home-page-child9 {
+  position: absolute;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-gray-200);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--color-mediumblue);
+  box-sizing: border-box;
+  height: 40px;
+}
+.home-page-child7 {
+  top: calc(50% - 821px);
+  left: calc(50% + 399px);
+  width: 261px;
+}
+.home-page-child8,
+.home-page-child9 {
+  top: 1163px;
+  left: 751px;
+  width: 350px;
+}
+.home-page-child9 {
+  top: 1227px;
+}
+.engineering,
+.healthcare,
+.marketing,
+.public-administration {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 556px;
+  height: 39px;
+}
+.marketing {
+  top: 1165px;
+  left: 380px;
+}
+.engineering,
+.healthcare,
+.public-administration {
+  top: calc(50% - 883px);
+  left: calc(50% - 72px);
+}
+.engineering,
+.healthcare {
+  top: calc(50% - 882px);
+  left: calc(50% + 244px);
+}
+.engineering {
+  top: calc(50% - 821px);
+  left: calc(50% - 340px);
+}
+.hr-management {
+  position: absolute;
+  top: calc(50% - 813px);
+  left: calc(50% + 453px);
+}
+.business-administration {
+  position: absolute;
+  top: calc(50% - 821px);
+  left: calc(50% - 72px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 556px;
+  height: 39px;
+}
+.home-page-child10 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-gray-200);
+  position: absolute;
+  top: calc(50% - 765px);
+  left: calc(50% - 137px);
+  border-radius: var(--br-31xl);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-top: 1px solid var(--color-mediumblue);
+  border-right: 4px solid var(--color-mediumblue);
+  border-bottom: 4px solid var(--color-mediumblue);
+  border-left: 1px solid var(--color-mediumblue);
+  box-sizing: border-box;
+  width: 150px;
+  height: 40px;
+}
+.find-the-right {
+  margin: 0;
+}
+.find-the-right-container {
+  position: absolute;
+  top: 1641px;
+  left: 783px;
+  font-size: var(--font-size-56xl);
+  text-align: right;
+  display: flex;
+  align-items: center;
+  width: 597px;
+  height: 378px;
+}
+.explore-all {
+  position: absolute;
+  top: calc(50% - 759px);
+  left: calc(50% - 112px);
+}
+.home-page-child11,
+.home-page-child12 {
+  position: absolute;
+  top: calc(50% - 371px);
+  left: calc(50% - 660px);
+  border-radius: var(--br-31xl);
+  background-color: var(--color-gray-200);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--color-mediumblue);
+  box-sizing: border-box;
+  width: 150px;
+  height: 40px;
+}
+.home-page-child12 {
+  top: calc(50% - 309px);
+}
+.home-page-child13 {
+  top: calc(50% - 371px);
+  left: calc(50% - 218px);
+  width: 261px;
+}
+.home-page-child13,
+.home-page-child14,
+.home-page-child15,
+.home-page-child16 {
+  position: absolute;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-gray-200);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--color-mediumblue);
+  box-sizing: border-box;
+  height: 40px;
+}
+.home-page-child14 {
+  top: calc(50% - 309px);
+  left: calc(50% - 218px);
+  width: 261px;
+}
+.home-page-child15,
+.home-page-child16 {
+  top: 1678px;
+  left: 234px;
+  width: 240px;
+}
+.home-page-child16 {
+  top: 1740px;
+  left: 235px;
+  width: 239px;
+}
+.engineering1,
+.human-resources,
+.marketing1,
+.operations {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 556px;
+  height: 39px;
+}
+.marketing1 {
+  top: 1678px;
+  left: -142px;
+}
+.engineering1,
+.human-resources,
+.operations {
+  top: calc(50% - 308px);
+  left: calc(50% - 644px);
+}
+.engineering1,
+.operations {
+  top: calc(50% - 370px);
+  left: calc(50% - 366px);
+}
+.engineering1 {
+  top: calc(50% - 308px);
+}
+.finance,
+.retail-associate {
+  position: absolute;
+  top: calc(50% - 362px);
+  left: calc(50% - 441px);
+}
+.finance {
+  top: calc(50% - 308px);
+  left: calc(50% - 669px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 169px;
+  height: 39px;
+}
+.home-page-child17 {
+  position: absolute;
+  top: calc(50% - 445px);
+  left: calc(50% - 660px);
+  border-radius: var(--br-31xl);
+  background-color: var(--color-gray-200);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-bottom: 6px solid var(--color-mediumblue);
+  border-left: 6px solid var(--color-mediumblue);
+  box-sizing: border-box;
+  width: 350px;
+  height: 50px;
+}
+.suggested-searches {
+  position: absolute;
+  top: calc(50% - 437px);
+  left: calc(50% - 630px);
+  font-size: var(--font-size-6xl);
+}
+.image-2-icon {
+  position: absolute;
+  top: 2147px;
+  left: 51px;
+  width: 450px;
+  height: 343.23px;
+  object-fit: cover;
+}
+.learn-the-skills-container {
+  position: absolute;
+  top: 2537px;
+  left: 51px;
+  font-size: var(--font-size-21xl);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 460px;
+  height: 378px;
+}
+.home-page-child18 {
+  position: absolute;
+  top: 2878px;
+  left: 43px;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-gray-200);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  border-top: 1px solid var(--color-plum);
+  border-right: 1px solid var(--color-plum);
+  border-bottom: 5px solid var(--color-plum);
+  border-left: 5px solid var(--color-plum);
+  box-sizing: border-box;
+  width: 399px;
+  height: 50px;
+}
+.learn-the-skills1,
+.which-subject-do {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.which-subject-do {
+  top: calc(50% + 843px);
+  left: calc(50% - 685px);
+  justify-content: center;
+  width: 415px;
+}
+.learn-the-skills1 {
+  top: 2537px;
+  left: 920px;
+  font-size: var(--font-size-21xl);
+  text-align: right;
+  width: 460px;
+  height: 378px;
+}
+.home-page-child19 {
+  position: absolute;
+  top: 2880px;
+  left: 994px;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-gray-200);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  border-top: 1px solid var(--color-plum);
+  border-right: 5px solid var(--color-plum);
+  border-bottom: 5px solid var(--color-plum);
+  border-left: 1px solid var(--color-plum);
+  box-sizing: border-box;
+  width: 399px;
+  height: 50px;
+}
+.connect-with-people,
+.explore-project {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.explore-project {
+  top: calc(50% + 845px);
+  left: calc(50% + 260px);
+  width: 415px;
+}
+.connect-with-people {
+  top: 2537px;
+  left: 511px;
+  font-size: var(--font-size-21xl);
+  width: 460px;
+  height: 378px;
+}
+.home-page-child20 {
+  position: absolute;
+  top: 2880px;
+  left: 542px;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-gray-200);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  border-top: 1px solid var(--color-plum);
+  border-right: 5px solid var(--color-plum);
+  border-bottom: 5px solid var(--color-plum);
+  border-left: 5px solid var(--color-plum);
+  box-sizing: border-box;
+  width: 399px;
+  height: 50px;
+}
+.find-people-you {
+  position: absolute;
+  top: calc(50% + 845px);
+  left: calc(50% - 186px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 415px;
+}
+.home-page-child21 {
+  position: absolute;
+  top: 3116px;
+  left: 35px;
+  border-radius: var(--br-xl);
+  background-color: #d9d9d9;
+  width: 1360px;
+  height: 949px;
+}
+.techtok1 {
+  position: absolute;
+  top: 3151px;
+  left: 105px;
+  font-size: var(--font-size-21xl);
+  color: var(--color-gray-300);
+  text-align: left;
+}
+.layer-1-icon,
+.layer-2-icon,
+.layer-4-icon {
+  position: absolute;
+  height: 100%;
+  width: 99.99%;
+  top: 0;
+  right: 0.01%;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.layer-2-icon,
+.layer-4-icon {
+  width: 100%;
+  right: 0;
+}
+.layer-4-icon {
+  width: 99.97%;
+  left: 0.03%;
+}
+.a68716efc331fcc84e3a4ce5f23d18 {
+  position: absolute;
+  height: 9.34%;
+  width: 27.78%;
+  top: 51.44%;
+  right: 4.17%;
+  bottom: 39.22%;
+  left: 68.06%;
+}
+.browse-linkedin,
+.general {
+  position: absolute;
+  top: 3353px;
+  left: 105px;
+  font-size: var(--font-size-21xl);
+  color: var(--color-black);
+  text-align: left;
+}
+
+.browse-linkedin {
+  left: 581px;
+}
+
+/* .Design
+   {
+position: absolute;
+  top: 3250px;
+  left: 105px;
+  font-size: var(--font-size-21xl);
+  color: var(--color-black);
+  text-align: left;
+    }
+.Codding
+   {
+position: absolute;
+  top: 3200px;
+  left: 105px;
+  font-size: var(--font-size-21xl);
+  color: var(--color-black);
+  text-align: left;
+    } */
+
+.directories,
+.learning-jobs-salary-container,
+.members-jobs-companies-container {
+  position: absolute;
+  top: 3437px;
+  left: 581px;
+  font-size: var(--font-size-11xl);
+  color: var(--color-gray-100);
+  text-align: left;
+}
+.directories,
+.members-jobs-companies-container {
+  left: 1077px;
+}
+.directories {
+  top: 3353px;
+  font-size: var(--font-size-21xl);
+  color: var(--color-black);
+}
+.home-page {
+  position: relative;
+  background-color: #21660fd1;
+  width: 100%;
+  height: 4096px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="home-page">
+      <input class="home-page-child" type="email" />
+
+      <input class="home-page-item" type="password" />
+
+      <button class="home-page-inner"></button>
+      <a href="Main Feed.html"class="home-page-inner"></a>
+      <button class="rectangle-button"></button>
+
+      <div class="email-or-phone">Email or phone</div>
+      <div class="password">Password</div>
+      <div class="sign-in">Sign in</div>
+      <div class="new-to-techtolk">New to TechTOLK? Join now</div>
+      <a href="Joining Page.html"class="new-to-techtolk"></a>
+      <div class="or">or</div>
+      <div class="forgot-password">
+        <span class="forgot-password-txt-container">
+          <p class="find-the-right">Forgot password?</p>
+        </span>
+      </div>
+      <div class="line-div"></div>
+      <img class="line-icon" alt="" src="./public/line-5.svg" />
+
+      <div class="techtok">TechTOK</div>
+     
+      <button type="button" class="home-page-child1" onclick> <a href="Signing Page.html"></a></button>
+      <a href="Signing Page.html"class="home-page-child1"></a>
+      <button type="button" class="home-page-child2"onclick> <a href="Joining Page.html"></a></button> 
+      <a href="Joining Page.html"class="home-page-child2"></a>
+
+      <a href="Signing Page.html"class="sign-in1">Sign in</a>
+      <a href="Joining Page.html"class="join-now">Join now</a>
+
+      <div class="rectangle-div"></div>
+      <div class="welcome-to-your">Welcome to your professional community</div>
+      <div class="home-page-child3"></div>
+      <div class="explore-collaborative-articles">
+        Explore collaborative articles
+      </div>
+      <div class="home-page-child4"></div>
+      <div class="home-page-child5"></div>
+      <div class="home-page-child6"></div>
+      <div class="home-page-child7"></div>
+      <div class="home-page-child8"></div>
+      <div class="home-page-child9"></div>
+      <div class="marketing">Marketing</div>
+      <div class="public-administration">Public Administration</div>
+      <div class="healthcare">Healthcare</div>
+      <div class="engineering">Engineering</div>
+      <div class="hr-management">HR Management</div>
+      <div class="business-administration">Business Administration</div>
+      <button class="home-page-child10"></button>
+      <div class="find-the-right-container">
+        <span class="forgot-password-txt-container">
+          <p class="find-the-right">Find the right job or internship for you</p>
+        </span>
+      </div>
+      <div class="explore-all">Explore All</div>
+      <div class="home-page-child11"></div>
+      <div class="home-page-child12"></div>
+      <div class="home-page-child13"></div>
+      <div class="home-page-child14"></div>
+      <div class="home-page-child15"></div>
+      <div class="home-page-child16"></div>
+      <div class="marketing1">Marketing</div>
+      <div class="human-resources">Human Resources</div>
+      <div class="operations">Operations</div>
+      <div class="engineering1">Engineering</div>
+      <div class="retail-associate">Retail Associate</div>
+      <div class="finance">Finance</div>
+      <div class="home-page-child17"></div>
+      <div class="suggested-searches">SUGGESTED SEARCHES</div>
+      <img class="image-2-icon" alt="" src="./public/image-2@2x.png" />
+
+      <div class="learn-the-skills-container">
+        <span class="forgot-password-txt-container">
+          <p class="find-the-right">Learn the skills you</p>
+          <p class="find-the-right">need to succeed</p>
+        </span>
+      </div>
+      <div class="home-page-child18"></div>
+      <div class="which-subject-do">which subject do you want to learn ?</div>
+      <div class="learn-the-skills1">Learn the skills you need to succeed</div>
+      <div class="home-page-child19"></div>
+      <div class="explore-project">Explore Project</div>
+      <div class="connect-with-people">Connect with people who can help</div>
+      <div class="home-page-child20"></div>
+      <div class="find-people-you">Find people you know</div>
+      <div class="home-page-child21"></div>
+      <div class="techtok1">TechTOK</div>
+      <div class="a68716efc331fcc84e3a4ce5f23d18">
+        <img class="layer-1-icon" alt="" src="./public/layer-1.svg" />
+
+        <img class="layer-2-icon" alt="" src="./public/layer-2.svg" />
+
+        <img class="layer-2-icon" alt="" src="./public/layer-3.svg" />
+
+        <img class="layer-4-icon" alt="" src="./public/layer-4.svg" />
+
+        <img class="layer-4-icon" alt="" src="./public/layer-5.svg" />
+
+        <img class="layer-4-icon" alt="" src="./public/layer-6.svg" />
+
+        <img class="layer-4-icon" alt="" src="./public/layer-7.svg" />
+
+        <img class="layer-4-icon" alt="" src="./public/layer-8.svg" />
+      </div>
+      <div class="general">General</div>
+      <!-- <div class="Codding">Codding By : Chudasama Arpit</div>
+      <div class="Design">Design By : Sachaniya Bhavin</div> -->
+      <div class="browse-linkedin">Browse LinkedIn</div>
+      <div class="learning-jobs-salary-container">
+        <p class="find-the-right">Learning</p>
+        <p class="find-the-right">Jobs</p>
+        <p class="find-the-right">Salary</p>
+        <p class="find-the-right">Mobile</p>
+        <p class="find-the-right">Services</p>
+        <p class="find-the-right">Products</p>
+        <p class="find-the-right">Top Companies Hub</p>
+      </div>
+      <div class="members-jobs-companies-container">
+        <p class="find-the-right">Members</p>
+        <p class="find-the-right">Jobs</p>
+        <p class="find-the-right">Companies</p>
+        <p class="find-the-right">Featured</p>
+        <p class="find-the-right">Learning</p>
+        <p class="find-the-right">Posts</p>
+        <p class="find-the-right">Articles</p>
+      </div>
+      <div class="directories">Directories</div>
+    </div>
+  </body>
+</html>

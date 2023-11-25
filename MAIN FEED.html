@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+   <style>
+    body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-mini: 15px;
+  --font-size-xs: 12px;
+  --font-size-6xl: 25px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-lavender-100: #f2edff;
+  --color-red: #ff0000;
+  --color-mediumblue: #0038ff;
+  --color-gainsboro: #d9d9d9;
+  --color-cornflowerblue: #9886cf;
+  --color-plum: #c2adff;
+
+  /* Border radiuses */
+  --br-11xl: 30px;
+}
+
+    .photo {
+  position: absolute;
+  height: 85.74%;
+  width: 91.67%;
+  top: 10.64%;
+  right: 4.17%;
+  bottom: 3.62%;
+  left: 4.17%;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-plum);
+}
+.techtok {
+  position: absolute;
+  height: 85.9%;
+  width: 32.8%;
+  top: 0;
+  left: 0;
+  font-size: 65px;
+  color: #d7d6f3;
+  text-align: left;
+  display: inline-block;
+}
+.add,
+.me {
+  font-weight: 700;
+}
+.me {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  width: 5.45%;
+  top: 75.64%;
+  left: 71.82%;
+  font-size: var(--font-size-xs);
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+  display: inline-block;
+}
+.add {
+  text-decoration: none;
+  top: 76.92%;
+  left: 77.35%;
+  color: inherit;
+}
+.add,
+.home,
+.message,
+.people {
+  position: absolute;
+  width: 5.45%;
+  display: inline-block;
+}
+.home {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 80.77%;
+  left: 94.55%;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+}
+.message,
+.people {
+  top: 79.49%;
+  left: 88.71%;
+}
+.message {
+  top: 76.92%;
+  left: 82.88%;
+}
+.group-child {
+  border: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+}
+.search {
+  position: absolute;
+  height: 55%;
+  width: 25.34%;
+  top: 15%;
+  left: 10.45%;
+  display: inline-block;
+}
+.group-item {
+  position: absolute;
+  height: 83.33%;
+  width: 7.71%;
+  top: 8.33%;
+  right: 91.5%;
+  bottom: 8.33%;
+  left: 0.79%;
+  border-radius: 50%;
+  background-color: var(--color-plum);
+}
+.group-inner,
+.rectangle-parent {
+  position: absolute;
+  height: 100%;
+  width: 61.67%;
+  top: 0;
+  right: 38.33%;
+  bottom: 0;
+  left: 0;
+}
+.group-inner {
+  height: 80%;
+  width: 5.07%;
+  right: 23.97%;
+  bottom: 20%;
+  left: 70.96%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.group-child1 {
+  cursor: pointer;
+}
+.group-child1,
+.group-child2,
+.group-child3,
+.group-child5,
+.group-child7 {
+  position: absolute;
+  height: 80%;
+  width: 5.07%;
+  top: 0;
+  right: 31.68%;
+  bottom: 20%;
+  left: 63.25%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.group-child3,
+.group-child5,
+.group-child7 {
+  right: 0;
+  left: 94.93%;
+}
+.group-child5,
+.group-child7 {
+  right: 8.13%;
+  left: 86.8%;
+}
+.group-child7 {
+  right: 16.26%;
+  left: 78.67%;
+}
+.vector-icon,
+.vector-icon1,
+.vector-icon2,
+.vector-icon3,
+.vector-icon4 {
+  position: absolute;
+  height: 41.67%;
+  width: 2.64%;
+  top: 28.33%;
+  right: 95.99%;
+  bottom: 30%;
+  left: 1.37%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon1,
+.vector-icon2,
+.vector-icon3,
+.vector-icon4 {
+  top: 20%;
+  right: 17.53%;
+  bottom: 38.33%;
+  left: 79.83%;
+}
+.vector-icon2,
+.vector-icon3,
+.vector-icon4 {
+  right: 9.4%;
+  left: 87.96%;
+}
+.vector-icon3,
+.vector-icon4 {
+  right: 1.27%;
+  left: 96.09%;
+}
+.vector-icon4 {
+  right: 32.95%;
+  left: 64.41%;
+}
+.group-div {
+  position: absolute;
+  height: 76.92%;
+  width: 71.74%;
+  top: 14.1%;
+  right: 0.91%;
+  bottom: 8.97%;
+  left: 27.35%;
+  font-size: 32px;
+  color: #000;
+}
+.vector-icon5 {
+  position: absolute;
+  height: 38.46%;
+  width: 2.27%;
+  top: 25.64%;
+  right: 18.79%;
+  bottom: 35.9%;
+  left: 78.94%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.group-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.desktop-1-inner,
+.rectangle-div {
+  position: absolute;
+  height: 5.76%;
+  width: 91.67%;
+  top: 2.22%;
+  right: 4.17%;
+  bottom: 92.02%;
+  left: 4.17%;
+}
+.rectangle-div {
+  height: 100%;
+  width: 94.17%;
+  top: 0;
+  right: 5.83%;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-cornflowerblue);
+}
+.mr-raj-major {
+  position: absolute;
+  height: 4%;
+  width: 39.97%;
+  top: 5.04%;
+  left: 20.62%;
+  display: inline-block;
+}
+.image-18-icon,
+.image-19-icon {
+  position: absolute;
+  height: 9.33%;
+  width: 14.65%;
+  top: 3.27%;
+  right: 80.96%;
+  bottom: 87.4%;
+  left: 4.39%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.image-19-icon {
+  height: 66.93%;
+  width: 94.17%;
+  top: 14.31%;
+  right: 5.83%;
+  bottom: 18.76%;
+  left: 0;
+  mix-blend-mode: normal;
+}
+.ellipse-div,
+.group-child10,
+.group-child9 {
+  position: absolute;
+  height: 21.28%;
+  width: 4.38%;
+  top: 0;
+  right: 95.62%;
+  bottom: 78.72%;
+  left: 0;
+  border-radius: 50%;
+  background-color: var(--color-gainsboro);
+}
+.group-child10,
+.group-child9 {
+  right: 92.34%;
+  left: 3.28%;
+  background-color: var(--color-mediumblue);
+}
+.group-child10 {
+  right: 88.4%;
+  left: 7.22%;
+  background-color: var(--color-red);
+}
+.liked-by-prem-27 {
+  position: absolute;
+  height: 21.27%;
+  width: 78.33%;
+  top: 0;
+  left: 12.48%;
+  display: flex;
+  align-items: center;
+  mix-blend-mode: normal;
+}
+.mr-raj-major1 {
+  top: 34.05%;
+  left: 0;
+  font-size: var(--font-size-mini);
+}
+.days-ago,
+.mr-raj-major1,
+.rajshthan {
+  position: absolute;
+  height: 21.27%;
+  width: 78.33%;
+  display: flex;
+  align-items: center;
+  mix-blend-mode: normal;
+}
+.days-ago {
+  top: 78.73%;
+  left: 0;
+  color: var(--color-lavender-100);
+}
+.rajshthan {
+  top: 34.05%;
+  left: 21.67%;
+  font-size: var(--font-size-mini);
+}
+.ellipse-parent {
+  position: absolute;
+  height: 12.53%;
+  width: 95.61%;
+  top: 86.13%;
+  right: 0;
+  bottom: 1.33%;
+  left: 4.39%;
+  text-align: left;
+  font-size: var(--font-size-xs);
+}
+.group-child11,
+.group-icon {
+  position: absolute;
+  height: 2.8%;
+  width: 18.83%;
+  top: 82.32%;
+  right: 76.77%;
+  bottom: 14.88%;
+  left: 4.39%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.group-child11 {
+  height: 4.53%;
+  width: 4.19%;
+  top: 82.86%;
+  right: 8.11%;
+  bottom: 12.6%;
+  left: 87.7%;
+}
+.rectangle-group {
+  position: relative;
+  width: 591.78px;
+  height: 733.74px;
+}
+.group-child22,
+.group-child23,
+.group-child28,
+.group-child29 {
+  position: absolute;
+  height: 2.8%;
+  width: 18.83%;
+  top: 191.31%;
+  right: 76.77%;
+  bottom: -94.11%;
+  left: 4.39%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.group-child23,
+.group-child28,
+.group-child29 {
+  height: 4.53%;
+  width: 4.19%;
+  top: 191.86%;
+  right: 8.11%;
+  bottom: -96.39%;
+  left: 87.7%;
+}
+.group-child28,
+.group-child29 {
+  height: 2.8%;
+  width: 18.83%;
+  top: 191.31%;
+  right: -38.6%;
+  bottom: -94.11%;
+  left: 119.77%;
+}
+.group-child29 {
+  height: 4.53%;
+  width: 4.19%;
+  top: 191.86%;
+  right: -107.26%;
+  bottom: -96.39%;
+  left: 203.08%;
+}
+.frame-div {
+  position: absolute;
+  height: 83.3%;
+  width: 88.54%;
+  top: 13.08%;
+  right: 4.17%;
+  bottom: 3.62%;
+  left: 7.29%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 91px;
+  font-size: var(--font-size-6xl);
+}
+.desktop-1 {
+  position: relative;
+  background-color: #201b1b;
+  width: 100%;
+  height: 1353px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-xs);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+
+   </style>
+  </head>
+  <body>
+    <div class="desktop-1">
+      <div class="photo"></div>
+      <div class="desktop-1-inner">
+        <div class="group-wrapper">
+          <div class="group-wrapper">
+            <div class="group-wrapper">
+              <div class="group-wrapper">
+                <div class="techtok">TechTOLK</div>
+                <button class="me" autofocus="{true}" id="me" me>Me</button>
+                <a class="add">Add</a>
+                <button class="home" id="hm" hm>Home</button>
+                <b class="people">People</b>
+                <b class="message">Message</b>
+                <div class="group-div">
+                  <div class="rectangle-parent">
+                    <input class="group-child" type="search" />
+
+                    <div class="search">Search</div>
+                    <div class="group-item"></div>
+                  </div>
+                  <img
+                    class="group-inner"
+                    alt=""
+                    src="./public/ellipse-65.svg"
+                  />
+
+                  <img
+                    class="group-inner"
+                    id="ADDDDDDD"
+                    addddddd="ADDDDDDD"
+                    alt=""
+                    src="./public/ellipse-65.svg"
+                  />
+                  <a href="Post_Photo.html"class="group-inner"></a>
+
+                  <img
+                    class="group-child1"
+                    alt=""
+                    src="./public/ellipse-65.svg"
+                    id="ellipseIcon2"
+                  />
+
+                  <img
+                    class="group-child2"
+                    id="MEEEEEE"
+                    meeee="MEEEEE"
+                    alt=""
+                    src="./public/ellipse-65.svg"
+                  />
+                  <a href="Me.html"class="group-child2"></a>
+
+                  <img
+                    class="group-child3"
+                    alt=""
+                    src="./public/ellipse-65.svg"
+                  />
+                
+
+                  <img
+                    class="group-child3"
+                    alt=""
+                    src="./public/ellipse-65.svg"
+                  />
+                  <a href="MAIN FEED.html" class="group-child3"></a>
+                  <img
+                    class="group-child5"
+                    alt=""
+                    src="./public/ellipse-65.svg"
+                  />
+
+                  <img
+                    class="group-child5"
+                    alt=""
+                    src="./public/ellipse-65.svg"
+                  />
+
+                  <img
+                    class="group-child7"
+                    alt=""
+                    src="./public/ellipse-65.svg"
+                  />
+
+                  <img
+                    class="group-child7"
+                    alt=""
+                    src="./public/ellipse-65.svg"
+                  />
+
+                  <img class="vector-icon" alt="" src="./public/vector.svg" />
+
+                  <img class="vector-icon1" alt="" src="./public/vector1.svg" />
+
+                  <img class="vector-icon2" alt="" src="./public/vector2.svg" />
+
+                  <img class="vector-icon3" alt="" src="./public/vector3.svg" />
+
+                  <img class="vector-icon4" alt="" src="./public/vector4.svg" />
+                </div>
+              </div>
+            </div>
+            <img class="vector-icon5" alt="" src="./public/vector5.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="frame-div">
+        <div class="rectangle-group">
+          <div class="rectangle-div"></div>
+          <b class="mr-raj-major">Mr. RAJ MAJOR</b>
+          <img class="image-18-icon" alt="" src="./public/image-18@2x.png" />
+
+          <img class="image-19-icon" alt="" src="./public/image-19@2x.png" />
+
+          <div class="ellipse-parent">
+            <div class="ellipse-div"></div>
+            <div class="group-child9"></div>
+            <div class="group-child10"></div>
+            <div class="liked-by-prem-27">
+              Liked by prem_27 and 111,393 others
+            </div>
+            <div class="mr-raj-major1">Mr. Raj major</div>
+            <div class="days-ago">2 days ago</div>
+            <div class="rajshthan">Rajshthan</div>
+          </div>
+          <img class="group-icon" alt="" src="./public/group-299.svg" />
+
+          <img class="group-child11" alt="" src="./public/group-297.svg" />
+        </div>
+        <div class="rectangle-group">
+          <div class="rectangle-div"></div>
+          <b class="mr-raj-major">Mr. RAJ MAJOR</b>
+          <img class="image-18-icon" alt="" src="./public/image-181@2x.png" />
+
+          <img class="image-19-icon" alt="" src="./public/image-191@2x.png" />
+
+          <div class="ellipse-parent">
+            <div class="ellipse-div"></div>
+            <div class="group-child9"></div>
+            <div class="group-child10"></div>
+            <div class="liked-by-prem-27">
+              Liked by prem_27 and 111,393 others
+            </div>
+            <div class="mr-raj-major1">Mr. Raj major</div>
+            <div class="days-ago">2 days ago</div>
+            <div class="rajshthan">Rajshthan</div>
+          </div>
+          <img class="group-icon" alt="" src="./public/group-2991.svg" />
+
+          <img class="group-child11" alt="" src="./public/group-2971.svg" />
+        </div>
+        <div class="rectangle-group">
+          <div class="rectangle-div"></div>
+          <b class="mr-raj-major">Mr. RAJ MAJOR</b>
+          <img class="image-18-icon" alt="" src="./public/image-182@2x.png" />
+
+          <img class="image-19-icon" alt="" src="./public/image-192@2x.png" />
+
+          <div class="ellipse-parent">
+            <div class="ellipse-div"></div>
+            <div class="group-child9"></div>
+            <div class="group-child10"></div>
+            <div class="liked-by-prem-27">
+              Liked by prem_27 and 111,393 others
+            </div>
+            <div class="mr-raj-major1">Mr. Raj major</div>
+            <div class="days-ago">2 days ago</div>
+            <div class="rajshthan">Rajshthan</div>
+          </div>
+          <img class="group-child22" alt="" src="./public/group-2992.svg" />
+
+          <img class="group-child23" alt="" src="./public/group-2992.svg" />
+        </div>
+        <div class="rectangle-group">
+          <div class="rectangle-div"></div>
+          <b class="mr-raj-major">Mr. RAJ MAJOR</b>
+          <img class="image-18-icon" alt="" src="./public/image-183@2x.png" />
+
+          <img class="image-19-icon" alt="" src="./public/image-193@2x.png" />
+
+          <div class="ellipse-parent">
+            <div class="ellipse-div"></div>
+            <div class="group-child9"></div>
+            <div class="group-child10"></div>
+            <div class="liked-by-prem-27">
+              Liked by prem_27 and 111,393 others
+            </div>
+            <div class="mr-raj-major1">Mr. Raj major</div>
+            <div class="days-ago">2 days ago</div>
+            <div class="rajshthan">Rajshthan</div>
+          </div>
+          <img class="group-child28" alt="" src="./public/group-2992.svg" />
+
+          <img class="group-child29" alt="" src="./public/group-2992.svg" />
+        </div>
+        <div class="rectangle-group">
+          <div class="rectangle-div"></div>
+          <b class="mr-raj-major">Mr. RAJ MAJOR</b>
+          <img class="image-18-icon" alt="" src="./public/image-184@2x.png" />
+
+          <img class="image-19-icon" alt="" src="./public/image-194@2x.png" />
+
+          <div class="ellipse-parent">
+            <div class="ellipse-div"></div>
+            <div class="group-child9"></div>
+            <div class="group-child10"></div>
+            <div class="liked-by-prem-27">
+              Liked by prem_27 and 111,393 others
+            </div>
+            <div class="mr-raj-major1">Mr. Raj major</div>
+            <div class="days-ago">2 days ago</div>
+            <div class="rajshthan">Rajshthan</div>
+          </div>
+          <img class="group-icon" alt="" src="./public/group-2992.svg" />
+
+          <img class="group-child11" alt="" src="./public/group-2992.svg" />
+        </div>
+        <div class="rectangle-group">
+          <div class="rectangle-div"></div>
+          <b class="mr-raj-major">Mr. RAJ MAJOR</b>
+          <img class="image-18-icon" alt="" src="./public/image-184@2x.png" />
+
+          <img class="image-19-icon" alt="" src="./public/image-194@2x.png" />
+
+          <div class="ellipse-parent">
+            <div class="ellipse-div"></div>
+            <div class="group-child9"></div>
+            <div class="group-child10"></div>
+            <div class="liked-by-prem-27">
+              Liked by prem_27 and 111,393 others
+            </div>
+            <div class="mr-raj-major1">Mr. Raj major</div>
+            <div class="days-ago">2 days ago</div>
+            <div class="rajshthan">Rajshthan</div>
+          </div>
+          <img class="group-icon" alt="" src="./public/group-2992.svg" />
+
+          <img class="group-child11" alt="" src="./public/group-2992.svg" />
+        </div>
+        <div class="rectangle-group">
+          <div class="rectangle-div"></div>
+          <b class="mr-raj-major">Mr. RAJ MAJOR</b>
+          <img class="image-18-icon" alt="" src="./public/image-184@2x.png" />
+
+          <img class="image-19-icon" alt="" src="./public/image-194@2x.png" />
+
+          <div class="ellipse-parent">
+            <div class="ellipse-div"></div>
+            <div class="group-child9"></div>
+            <div class="group-child10"></div>
+            <div class="liked-by-prem-27">
+              Liked by prem_27 and 111,393 others
+            </div>
+            <div class="mr-raj-major1">Mr. Raj major</div>
+            <div class="days-ago">2 days ago</div>
+            <div class="rajshthan">Rajshthan</div>
+          </div>
+          <img class="group-icon" alt="" src="./public/group-2992.svg" />
+
+          <img class="group-child11" alt="" src="./public/group-2992.svg" />
+        </div>
+        <div class="rectangle-group">
+          <div class="rectangle-div"></div>
+          <b class="mr-raj-major">Mr. RAJ MAJOR</b>
+          <img class="image-18-icon" alt="" src="./public/image-184@2x.png" />
+
+          <img class="image-19-icon" alt="" src="./public/image-194@2x.png" />
+
+          <div class="ellipse-parent">
+            <div class="ellipse-div"></div>
+            <div class="group-child9"></div>
+            <div class="group-child10"></div>
+            <div class="liked-by-prem-27">
+              Liked by prem_27 and 111,393 others
+            </div>
+            <div class="mr-raj-major1">Mr. Raj major</div>
+            <div class="days-ago">2 days ago</div>
+            <div class="rajshthan">Rajshthan</div>
+          </div>
+          <img class="group-icon" alt="" src="./public/group-2992.svg" />
+
+          <img class="group-child11" alt="" src="./public/group-2992.svg" />
+        </div>
+        <div class="rectangle-group">
+          <div class="rectangle-div"></div>
+          <b class="mr-raj-major">Mr. RAJ MAJOR</b>
+          <img class="image-18-icon" alt="" src="./public/image-184@2x.png" />
+
+          <img class="image-19-icon" alt="" src="./public/image-194@2x.png" />
+
+          <div class="ellipse-parent">
+            <div class="ellipse-div"></div>
+            <div class="group-child9"></div>
+            <div class="group-child10"></div>
+            <div class="liked-by-prem-27">
+              Liked by prem_27 and 111,393 others
+            </div>
+            <div class="mr-raj-major1">Mr. Raj major</div>
+            <div class="days-ago">2 days ago</div>
+            <div class="rajshthan">Rajshthan</div>
+          </div>
+          <img class="group-icon" alt="" src="./public/group-2992.svg" />
+
+          <img class="group-child11" alt="" src="./public/group-2992.svg" />
+        </div>
+        <div class="rectangle-group">
+          <div class="rectangle-div"></div>
+          <b class="mr-raj-major">Mr. RAJ MAJOR</b>
+          <img class="image-18-icon" alt="" src="./public/image-184@2x.png" />
+
+          <img class="image-19-icon" alt="" src="./public/image-194@2x.png" />
+
+          <div class="ellipse-parent">
+            <div class="ellipse-div"></div>
+            <div class="group-child9"></div>
+            <div class="group-child10"></div>
+            <div class="liked-by-prem-27">
+              Liked by prem_27 and 111,393 others
+            </div>
+            <div class="mr-raj-major1">Mr. Raj major</div>
+            <div class="days-ago">2 days ago</div>
+            <div class="rajshthan">Rajshthan</div>
+          </div>
+          <img class="group-icon" alt="" src="./public/group-2992.svg" />
+
+          <img class="group-child11" alt="" src="./public/group-2992.svg" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var ellipseIcon2 = document.getElementById("ellipseIcon2");
+      if (ellipseIcon2) {
+        ellipseIcon2.addEventListener("click", function (e) {
+          // Please sync "me/MAIN" to the project
+        });
+      }
+      </script>
+  </body>
+</html>

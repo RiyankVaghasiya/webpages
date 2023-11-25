@@ -1,0 +1,1980 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <style>
+      body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-8xl: 27px;
+  --font-size-xs: 12px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-13xl: 32px;
+  --font-size-14xl: 33px;
+  --font-size-71xl: 90px;
+  --font-size-11xl: 30px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-cornflowerblue: #9886cf;
+  --color-plum-100: #c2adff;
+  --color-black: #000;
+
+  /* Border radiuses */
+  --br-31xl: 50px;
+  --br-81xl: 100px;
+  --br-29xl: 48px;
+  --br-71xl: 90px;
+  --br-11xl: 30px;
+  --br-101xl: 120px;
+}
+.frame-child,
+.photo {
+  position: absolute;
+  height: 92.36%;
+  width: 100%;
+  top: 7.64%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-plum-100);
+}
+.frame-child {
+  height: 19.9%;
+  width: 93.18%;
+  top: 10.03%;
+  right: 4.55%;
+  bottom: 70.06%;
+  left: 2.27%;
+  background-color: var(--color-cornflowerblue);
+}
+.stroller {
+  position: absolute;
+  height: 70.36%;
+  width: 1.49%;
+  top: 0;
+  right: 0;
+  bottom: 29.64%;
+  left: 98.51%;
+  border-radius: 0 var(--br-101xl) var(--br-101xl) 0;
+  background-color: rgba(194, 173, 255, 0.5);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.25) inset;
+  border-top: 1px solid var(--color-black);
+  border-right: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-black);
+  box-sizing: border-box;
+}
+.group-child,
+.group-item {
+  position: absolute;
+  height: 2.37%;
+  width: 0.94%;
+  top: 2.64%;
+  right: 1.02%;
+  bottom: 94.99%;
+  left: 98.04%;
+  border-radius: var(--br-71xl);
+  background-color: var(--color-black);
+}
+.group-item {
+  height: 0.88%;
+  width: 6.27%;
+  top: 99.12%;
+  right: 93.73%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-cornflowerblue);
+}
+.vector-icon,
+.vector-icon1 {
+  position: absolute;
+  height: 1.26%;
+  width: 1.19%;
+  top: 67.28%;
+  right: 1.16%;
+  bottom: 31.46%;
+  left: 97.65%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon1 {
+  top: 0.88%;
+  right: 0.89%;
+  bottom: 97.86%;
+  left: 97.92%;
+}
+.mr-raj-major {
+  position: absolute;
+  top: 3.96%;
+  left: 22.27%;
+  font-size: var(--font-size-11xl);
+}
+.b,
+.b1 {
+  position: absolute;
+  width: 18.12%;
+  top: 2.64%;
+  left: 62.12%;
+  display: inline-block;
+}
+.b1 {
+  top: 15.39%;
+  font-size: var(--font-size-13xl);
+}
+.group-child1,
+.group-inner,
+.rectangle-div {
+  position: absolute;
+  height: 100%;
+  width: 21.74%;
+  top: 0;
+  right: 78.26%;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-cornflowerblue);
+}
+.group-child1,
+.rectangle-div {
+  right: 52.17%;
+  left: 26.09%;
+}
+.group-child1 {
+  right: 0;
+  left: 78.26%;
+}
+.following,
+.group-child2 {
+  position: absolute;
+  top: 26%;
+  left: 4.06%;
+}
+.group-child2 {
+  height: 100%;
+  width: 21.74%;
+  top: 0;
+  right: 26.09%;
+  bottom: 0;
+  left: 52.17%;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-cornflowerblue);
+  border-top: 1px solid var(--color-white);
+  border-right: 1px solid var(--color-white);
+  border-bottom: 7px solid var(--color-white);
+  border-left: 7px solid var(--color-white);
+  box-sizing: border-box;
+}
+.follwers,
+.post,
+.projects {
+  position: absolute;
+  top: 26%;
+  left: 31.01%;
+}
+.post,
+.projects {
+  left: 59.86%;
+}
+.projects {
+  left: 83.33%;
+}
+.rectangle-parent {
+  position: absolute;
+  height: 4.4%;
+  width: 54.12%;
+  top: 25.68%;
+  right: 45.88%;
+  bottom: 69.92%;
+  left: 0;
+  font-size: var(--font-size-xl);
+}
+.student-at-delhi {
+  position: absolute;
+  top: 11.35%;
+  left: 21.73%;
+  font-size: var(--font-size-8xl);
+}
+.followers,
+.post1 {
+  position: absolute;
+  top: 10.99%;
+  left: 68.39%;
+  font-size: var(--font-size-14xl);
+}
+.followers {
+  top: 19.61%;
+  left: 68%;
+  font-size: var(--font-size-lg);
+}
+.b2 {
+  width: 18.12%;
+  top: 15.39%;
+  left: 77.18%;
+  font-size: var(--font-size-13xl);
+  display: inline-block;
+}
+.b2,
+.b3,
+.following1 {
+  position: absolute;
+}
+.following1 {
+  top: 19.61%;
+  left: 82.98%;
+  font-size: var(--font-size-lg);
+}
+.b3 {
+  width: 18.12%;
+  top: 2.64%;
+  left: 77.18%;
+  display: inline-block;
+}
+.delhi-india,
+.projects1 {
+  position: absolute;
+  top: 10.99%;
+  left: 81.02%;
+  font-size: var(--font-size-14xl);
+}
+.delhi-india {
+  top: 18.65%;
+  left: 22.04%;
+  font-size: var(--font-size-8xl);
+}
+.image-15-icon {
+  position: absolute;
+  height: 17.59%;
+  width: 15.69%;
+  top: 3.96%;
+  right: 81.96%;
+  bottom: 78.45%;
+  left: 2.35%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.stroller-parent {
+  position: absolute;
+  height: 90.53%;
+  width: 96.59%;
+  top: 8.44%;
+  right: 1.14%;
+  bottom: 1.04%;
+  left: 2.27%;
+}
+.frame-item,
+.photo-icon {
+  position: absolute;
+  border-radius: var(--br-11xl);
+}
+.photo-icon {
+  height: 92.36%;
+  width: 100%;
+  top: 8.48%;
+  right: 0;
+  bottom: -0.84%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.frame-item {
+  height: 19.9%;
+  width: 95.45%;
+  top: 10.03%;
+  right: 2.27%;
+  bottom: 70.06%;
+  left: 2.27%;
+  background-color: var(--color-cornflowerblue);
+}
+.mr-raj-major1 {
+  position: absolute;
+  top: 12.02%;
+  left: 23.79%;
+  font-size: var(--font-size-11xl);
+}
+.b4,
+.b5 {
+  position: absolute;
+  width: 17.5%;
+  top: 10.83%;
+  left: 63.64%;
+  display: inline-block;
+}
+.b5 {
+  top: 22.37%;
+  font-size: var(--font-size-13xl);
+}
+.student-at-delhi1 {
+  position: absolute;
+  top: 18.71%;
+  left: 23.79%;
+  font-size: var(--font-size-8xl);
+}
+.post2 {
+  top: 18.39%;
+  left: 69.77%;
+  font-size: var(--font-size-14xl);
+  font-weight: 300;
+}
+.b6,
+.followers1,
+.post2 {
+  position: absolute;
+}
+.followers1 {
+  top: 26.27%;
+  left: 69.32%;
+  font-size: var(--font-size-lg);
+  font-weight: 300;
+}
+.b6 {
+  width: 6.89%;
+  top: 22.37%;
+  left: 83.03%;
+  font-size: var(--font-size-13xl);
+  display: inline-block;
+}
+.following2 {
+  top: 26.19%;
+  left: 83.48%;
+  font-size: var(--font-size-lg);
+  font-weight: 300;
+}
+.b7,
+.following2,
+.projects2 {
+  position: absolute;
+}
+.b7 {
+  width: 17.5%;
+  top: 10.83%;
+  left: 77.73%;
+  display: inline-block;
+}
+.projects2 {
+  top: 18.39%;
+  left: 82.58%;
+  font-size: var(--font-size-14xl);
+  font-weight: 300;
+}
+.delhi-india1 {
+  position: absolute;
+  top: 25.32%;
+  left: 23.79%;
+  font-size: var(--font-size-8xl);
+}
+.frame-inner,
+.image-15-icon1 {
+  position: absolute;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.image-15-icon1 {
+  height: 15.92%;
+  width: 15.15%;
+  top: 12.02%;
+  right: 80.3%;
+  bottom: 72.05%;
+  left: 4.55%;
+  object-fit: cover;
+}
+.frame-inner {
+  height: 3.98%;
+  width: 3.79%;
+  top: 82.4%;
+  right: 6.17%;
+  bottom: 13.61%;
+  left: 90.04%;
+}
+.me,
+.techtolk {
+  position: absolute;
+  display: inline-block;
+}
+.techtolk {
+  height: 85.9%;
+  width: 32.8%;
+  top: 0;
+  left: 0;
+  font-size: 65px;
+  color: #d7d6f3;
+  text-align: left;
+}
+.me {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 5.45%;
+  top: 75.64%;
+  left: 71.82%;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+}
+.add {
+  top: 76.92%;
+  left: 77.35%;
+}
+.add,
+.home,
+.message,
+.people {
+  position: absolute;
+  width: 5.45%;
+  display: inline-block;
+}
+.home {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 80.77%;
+  left: 94.55%;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+}
+.message,
+.people {
+  top: 79.49%;
+  left: 88.71%;
+}
+.message {
+  top: 76.92%;
+  left: 82.88%;
+}
+.group-child3 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-white);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+}
+.search {
+  position: absolute;
+  height: 55%;
+  width: 25.34%;
+  top: 15%;
+  left: 10.45%;
+  display: inline-block;
+}
+.ellipse-div {
+  position: absolute;
+  height: 83.33%;
+  width: 7.71%;
+  top: 8.33%;
+  right: 91.5%;
+  bottom: 8.33%;
+  left: 0.79%;
+  border-radius: 50%;
+  background-color: var(--color-plum-100);
+}
+.rectangle-group {
+  position: absolute;
+  height: 100%;
+  width: 61.67%;
+  top: 0;
+  right: 38.33%;
+  bottom: 0;
+  left: 0;
+}
+.ellipse-icon,
+.group-child4,
+.group-child5,
+.group-child6,
+.group-child7 {
+  position: absolute;
+  height: 80%;
+  width: 5.07%;
+  top: 0;
+  right: 23.97%;
+  bottom: 20%;
+  left: 70.96%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.group-child4,
+.group-child5,
+.group-child6,
+.group-child7 {
+  right: 31.68%;
+  left: 63.25%;
+}
+.group-child5,
+.group-child6,
+.group-child7 {
+  right: 0;
+  left: 94.93%;
+}
+.group-child6,
+.group-child7 {
+  right: 8.13%;
+  left: 86.8%;
+}
+.group-child7 {
+  right: 16.26%;
+  left: 78.67%;
+}
+.vector-icon2,
+.vector-icon3,
+.vector-icon4,
+.vector-icon5,
+.vector-icon6 {
+  position: absolute;
+  height: 41.67%;
+  width: 2.64%;
+  top: 28.33%;
+  right: 95.99%;
+  bottom: 30%;
+  left: 1.37%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon3,
+.vector-icon4,
+.vector-icon5,
+.vector-icon6 {
+  top: 20%;
+  right: 17.53%;
+  bottom: 38.33%;
+  left: 79.83%;
+}
+.vector-icon4,
+.vector-icon5,
+.vector-icon6 {
+  right: 9.4%;
+  left: 87.96%;
+}
+.vector-icon5,
+.vector-icon6 {
+  right: 1.27%;
+  left: 96.09%;
+}
+.vector-icon6 {
+  right: 32.95%;
+  left: 64.41%;
+}
+.group-div {
+  position: absolute;
+  height: 76.92%;
+  width: 71.74%;
+  top: 14.1%;
+  right: 0.91%;
+  bottom: 8.97%;
+  left: 27.35%;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+}
+.vector-icon7 {
+  position: absolute;
+  height: 38.46%;
+  width: 2.27%;
+  top: 25.64%;
+  right: 18.79%;
+  bottom: 35.9%;
+  left: 78.94%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.group-container {
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.group-child8,
+.group-container,
+.group-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.group-wrapper {
+  height: 6.21%;
+  width: 100%;
+  bottom: 93.79%;
+  left: 0;
+  font-size: var(--font-size-xs);
+}
+.group-child8 {
+  height: 100%;
+  width: 17.3%;
+  bottom: 0;
+  left: 82.7%;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-cornflowerblue);
+}
+.settings {
+  position: absolute;
+  top: 26%;
+  left: 86.62%;
+}
+.group-child10,
+.group-child11,
+.group-child9 {
+  position: absolute;
+  height: 100%;
+  width: 17.3%;
+  top: 0;
+  right: 82.7%;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-cornflowerblue);
+}
+.group-child10,
+.group-child11 {
+  right: 41.18%;
+  left: 41.52%;
+}
+.group-child11 {
+  right: 20.42%;
+  left: 62.28%;
+}
+.following3,
+.group-child12 {
+  position: absolute;
+  top: 26%;
+  left: 3.23%;
+}
+.group-child12 {
+  height: 100%;
+  width: 17.3%;
+  top: 0;
+  right: 61.94%;
+  bottom: 0;
+  left: 20.76%;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-cornflowerblue);
+  border-top: 1px solid var(--color-white);
+  border-right: 1px solid var(--color-white);
+  border-bottom: 7px solid var(--color-white);
+  border-left: 7px solid var(--color-white);
+  box-sizing: border-box;
+}
+.follwers1,
+.post3,
+.projects3 {
+  position: absolute;
+  top: 26%;
+  left: 24.68%;
+}
+.post3,
+.projects3 {
+  left: 47.64%;
+}
+.projects3 {
+  left: 66.32%;
+}
+.rectangle-container {
+  position: absolute;
+  height: 3.98%;
+  width: 65.68%;
+  top: 30.65%;
+  right: 31.89%;
+  bottom: 65.37%;
+  left: 2.42%;
+  font-size: var(--font-size-xl);
+}
+.photo-parent {
+  position: absolute;
+  top: 48px;
+  left: 60px;
+  width: 1320px;
+  height: 1256px;
+}
+.mefollowers-child {
+  position: absolute;
+  height: 0.74%;
+  width: 5.56%;
+  top: 48.85%;
+  right: 5.97%;
+  bottom: 50.41%;
+  left: 88.47%;
+  border-radius: var(--br-71xl);
+  background-color: var(--color-plum-100);
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+}
+.group-child13,
+.group-child14,
+.group-child15,
+.group-child16 {
+  position: absolute;
+  top: 157px;
+  left: 3px;
+  border-radius: var(--br-81xl);
+  background-color: var(--color-cornflowerblue);
+  width: 600px;
+  height: 120px;
+}
+.group-child14,
+.group-child15,
+.group-child16 {
+  top: 643px;
+}
+.group-child15,
+.group-child16 {
+  top: 157px;
+  left: 627px;
+}
+.group-child16 {
+  top: 643px;
+}
+.rajshthan,
+.student-at-gujrat {
+  position: absolute;
+  top: 240px;
+  left: 118px;
+}
+.student-at-gujrat {
+  top: 214px;
+  font-size: var(--font-size-xs);
+}
+.rajshthan1,
+.student-at-gujrat1 {
+  position: absolute;
+  top: 240px;
+  left: 748px;
+}
+.student-at-gujrat1 {
+  top: 214px;
+  font-size: var(--font-size-xs);
+}
+.delhi,
+.student-at-delhi2 {
+  position: absolute;
+  top: 724px;
+  left: 118px;
+}
+.student-at-delhi2 {
+  top: 699px;
+  font-size: var(--font-size-xs);
+}
+.delhi1,
+.student-at-delhi3 {
+  position: absolute;
+  top: 724px;
+  left: 748px;
+}
+.student-at-delhi3 {
+  top: 699px;
+  font-size: var(--font-size-xs);
+}
+.mr-raj-major2,
+.mr-raj-major3,
+.mr-yash-jack,
+.mr-yash-jack1 {
+  position: absolute;
+  top: 172px;
+  left: 118px;
+  font-size: var(--font-size-8xl);
+}
+.mr-raj-major2,
+.mr-raj-major3,
+.mr-yash-jack1 {
+  left: 748px;
+}
+.mr-raj-major2,
+.mr-raj-major3 {
+  top: 656px;
+  left: 118px;
+}
+.mr-raj-major3 {
+  left: 748px;
+}
+.group-child17 {
+  position: absolute;
+  top: 658px;
+  left: 641px;
+  width: 90px;
+  height: 90px;
+}
+.group-child18,
+.group-child19,
+.group-child20,
+.image-7-icon {
+  position: absolute;
+  top: 172px;
+  left: 641px;
+  width: 90px;
+  height: 90px;
+}
+.group-child19,
+.group-child20,
+.image-7-icon {
+  left: 17px;
+}
+.group-child20,
+.image-7-icon {
+  top: 658px;
+}
+.image-7-icon {
+  top: 647.16px;
+  left: 4.17px;
+  border-radius: var(--br-31xl);
+  width: 115.95px;
+  height: 101.4px;
+  object-fit: cover;
+}
+.image-10-icon,
+.image-13-icon,
+.image-9-icon {
+  position: absolute;
+  top: 163px;
+  left: 4px;
+  border-radius: var(--br-29xl);
+  width: 116.28px;
+  height: 101.73px;
+  object-fit: cover;
+}
+.image-10-icon,
+.image-13-icon {
+  top: 163.16px;
+  left: 628.17px;
+  border-radius: var(--br-31xl);
+  width: 115.95px;
+  height: 101.4px;
+}
+.image-13-icon {
+  top: 647.16px;
+}
+.group-child21,
+.group-child22 {
+  position: absolute;
+  top: 0;
+  left: 3px;
+  border-radius: var(--br-81xl);
+  background-color: var(--color-cornflowerblue);
+  width: 600px;
+  height: 120px;
+}
+.group-child22 {
+  left: 627px;
+}
+.delhi2,
+.student-at-delhi4 {
+  position: absolute;
+  top: 83px;
+  left: 118px;
+}
+.student-at-delhi4 {
+  top: 58px;
+  font-size: var(--font-size-xs);
+}
+.delhi3,
+.student-at-delhi5 {
+  position: absolute;
+  top: 83px;
+  left: 748px;
+}
+.student-at-delhi5 {
+  top: 58px;
+  font-size: var(--font-size-xs);
+}
+.ms-mauri-jack,
+.ms-mauri-jack1 {
+  position: absolute;
+  top: 15px;
+  left: 118px;
+  font-size: var(--font-size-8xl);
+}
+.ms-mauri-jack1 {
+  left: 748px;
+}
+.group-child23,
+.group-child24 {
+  position: absolute;
+  top: 15px;
+  left: 641px;
+  width: 90px;
+  height: 90px;
+}
+.group-child24 {
+  left: 17px;
+}
+.image-11-icon,
+.image-5-icon {
+  position: absolute;
+  top: 9.16px;
+  left: 4.17px;
+  border-radius: var(--br-31xl);
+  width: 115.95px;
+  height: 101.4px;
+  object-fit: cover;
+}
+.image-11-icon {
+  left: 628.17px;
+}
+.group-child29,
+.group-child30,
+.rectangle-parent2 {
+  position: absolute;
+  top: 0;
+  left: 3px;
+  width: 1227px;
+  height: 120px;
+}
+.group-child29,
+.group-child30 {
+  top: 436px;
+  border-radius: var(--br-81xl);
+  background-color: var(--color-cornflowerblue);
+  width: 600px;
+}
+.group-child30 {
+  left: 627px;
+}
+.gujrat,
+.student-at-gujrat2 {
+  position: absolute;
+  top: 519px;
+  left: 118px;
+}
+.student-at-gujrat2 {
+  top: 494px;
+  font-size: var(--font-size-xs);
+}
+.gujrat1,
+.student-at-gujrat3 {
+  position: absolute;
+  top: 519px;
+  left: 748px;
+}
+.student-at-gujrat3 {
+  top: 494px;
+  font-size: var(--font-size-xs);
+}
+.mr-yash-major,
+.mr-yash-major1 {
+  position: absolute;
+  top: 451px;
+  left: 118px;
+  font-size: var(--font-size-8xl);
+}
+.mr-yash-major1 {
+  left: 748px;
+}
+.group-child31,
+.group-child32 {
+  position: absolute;
+  top: 451px;
+  left: 641px;
+  width: 90px;
+  height: 90px;
+}
+.group-child32 {
+  left: 17px;
+}
+.image-12-icon,
+.image-6-icon {
+  position: absolute;
+  top: 442.16px;
+  left: 4.17px;
+  border-radius: var(--br-31xl);
+  width: 115.95px;
+  height: 101.4px;
+  object-fit: cover;
+}
+.image-12-icon {
+  left: 628.17px;
+}
+.group-child34,
+.group-child35 {
+  position: absolute;
+  top: 274px;
+  left: 3px;
+  border-radius: var(--br-81xl);
+  background-color: var(--color-cornflowerblue);
+  width: 600px;
+  height: 120px;
+}
+.group-child35 {
+  left: 627px;
+}
+.delhi6,
+.student-at-delhi8 {
+  position: absolute;
+  top: 357px;
+  left: 118px;
+}
+.student-at-delhi8 {
+  top: 332px;
+  font-size: var(--font-size-xs);
+}
+.delhi7,
+.student-at-delhi9 {
+  position: absolute;
+  top: 357px;
+  left: 748px;
+}
+.student-at-delhi9 {
+  top: 332px;
+  font-size: var(--font-size-xs);
+}
+.ms-mauri-jack4,
+.ms-mauri-jack5 {
+  position: absolute;
+  top: 289px;
+  left: 118px;
+  font-size: var(--font-size-8xl);
+}
+.ms-mauri-jack5 {
+  left: 748px;
+}
+.group-child36,
+.group-child37,
+.image-5-icon1 {
+  position: absolute;
+  top: 289px;
+  left: 641px;
+  width: 90px;
+  height: 90px;
+}
+.group-child37,
+.image-5-icon1 {
+  left: 17px;
+}
+.image-5-icon1 {
+  top: 283.16px;
+  left: 4.17px;
+  border-radius: var(--br-31xl);
+  width: 115.95px;
+  height: 101.4px;
+  object-fit: cover;
+}
+.group-child38,
+.group-child39 {
+  position: absolute;
+  top: 309px;
+  left: 508px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #fff, #c2adff);
+  width: 50px;
+  height: 50px;
+}
+.group-child39 {
+  left: 1132px;
+}
+.image-11-icon1 {
+  position: absolute;
+  top: 283.16px;
+  left: 628.17px;
+  border-radius: var(--br-31xl);
+  width: 115.95px;
+  height: 101.4px;
+  object-fit: cover;
+}
+.image-14-traced,
+.image-14-traced1 {
+  position: absolute;
+  height: 3.62%;
+  top: 46.67%;
+  bottom: 49.71%;
+  left: calc(50% - 93.5px);
+  max-height: 100%;
+  width: 25px;
+}
+.image-14-traced1 {
+  left: calc(50% + 530.5px);
+}
+.group-child46,
+.group-child47,
+.group-child48,
+.group-icon {
+  position: absolute;
+  top: 147px;
+  left: 1132px;
+  width: 50px;
+  height: 50px;
+}
+.group-child46,
+.group-child47,
+.group-child48 {
+  left: 508px;
+}
+.group-child47,
+.group-child48 {
+  top: 640px;
+}
+.group-child48 {
+  top: 0;
+  left: 1132px;
+}
+.rectangle-parent3,
+.rectangle-parent4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1227px;
+  height: 690px;
+}
+.rectangle-parent3 {
+  top: 45px;
+}
+.group-child49,
+.group-child50 {
+  position: absolute;
+  top: 162px;
+  left: 3px;
+  border-radius: var(--br-81xl);
+  background-color: var(--color-cornflowerblue);
+  width: 600px;
+  height: 120px;
+}
+.group-child50 {
+  left: 627px;
+}
+.gujrat2,
+.student-at-gujrat4 {
+  position: absolute;
+  top: 245px;
+  left: 118px;
+}
+.student-at-gujrat4 {
+  top: 220px;
+  font-size: var(--font-size-xs);
+}
+.gujrat3,
+.student-at-gujrat5 {
+  position: absolute;
+  top: 245px;
+  left: 748px;
+}
+.student-at-gujrat5 {
+  top: 220px;
+  font-size: var(--font-size-xs);
+}
+.mr-yash-major2,
+.mr-yash-major3 {
+  position: absolute;
+  top: 177px;
+  left: 118px;
+  font-size: var(--font-size-8xl);
+}
+.mr-yash-major3 {
+  left: 748px;
+}
+.group-child51,
+.group-child52 {
+  position: absolute;
+  top: 177px;
+  left: 641px;
+  width: 90px;
+  height: 90px;
+}
+.group-child52 {
+  left: 17px;
+}
+.image-12-icon1,
+.image-6-icon1 {
+  position: absolute;
+  top: 168.16px;
+  left: 4.17px;
+  border-radius: var(--br-31xl);
+  width: 115.95px;
+  height: 101.4px;
+  object-fit: cover;
+}
+.image-12-icon1 {
+  left: 628.17px;
+}
+.rectangle-parent5,
+.rectangle-parent6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1227px;
+  height: 120px;
+}
+.rectangle-parent5 {
+  top: 319px;
+  height: 282px;
+}
+.rectangle-parent1 {
+  position: relative;
+  width: 1230px;
+  height: 763px;
+}
+.image-7-icon1,
+.image-9-icon1 {
+  position: absolute;
+  top: 643px;
+  left: 8.72px;
+  border-radius: var(--br-31xl);
+  width: 116px;
+  height: 100px;
+  object-fit: cover;
+}
+.image-9-icon1 {
+  top: 159px;
+  border-radius: var(--br-29xl);
+}
+.image-10-icon1,
+.image-11-icon3,
+.image-12-icon2,
+.image-13-icon1,
+.image-5-icon3,
+.image-6-icon2 {
+  position: absolute;
+  top: 159px;
+  left: 632.72px;
+  border-radius: var(--br-31xl);
+  width: 116px;
+  height: 100px;
+  object-fit: cover;
+}
+.image-11-icon3,
+.image-12-icon2,
+.image-13-icon1,
+.image-5-icon3,
+.image-6-icon2 {
+  top: 643px;
+}
+.image-11-icon3,
+.image-12-icon2,
+.image-5-icon3,
+.image-6-icon2 {
+  top: 5px;
+  left: 8.72px;
+}
+.image-11-icon3,
+.image-12-icon2,
+.image-6-icon2 {
+  left: 632.72px;
+}
+.image-12-icon2,
+.image-6-icon2 {
+  top: 164px;
+  left: 8.72px;
+}
+.image-12-icon2 {
+  left: 632.72px;
+}
+.group-child87,
+.group-child88 {
+  position: absolute;
+  top: 35px;
+  left: 508px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #fff, #c2adff);
+  width: 50px;
+  height: 50px;
+}
+.group-child88 {
+  left: 1132px;
+}
+.image-14-traced4,
+.image-14-traced5 {
+  position: absolute;
+  height: 20.83%;
+  top: 40%;
+  bottom: 39.17%;
+  left: calc(50% - 93.5px);
+  max-height: 100%;
+  width: 25px;
+}
+.image-14-traced5 {
+  left: calc(50% + 530.5px);
+}
+.frame-div {
+  position: absolute;
+  top: 501px;
+  left: 90px;
+  height: 790px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 43px;
+  font-size: var(--font-size-lg);
+}
+.mefollowers {
+  position: relative;
+  background-color: #201b1b;
+  width: 100%;
+  height: 1353px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-71xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="mefollowers">
+      <div class="photo-parent">
+        <div class="photo"></div>
+        <div class="frame-child"></div>
+        <div class="stroller-parent">
+          <div class="stroller"></div>
+          <div class="group-child"></div>
+          <div class="group-item"></div>
+          <img class="vector-icon" alt="" src="./public/vector.svg" />
+
+          <img class="vector-icon1" alt="" src="./public/vector1.svg" />
+
+          <b class="mr-raj-major">Mr. RAJ MAJOR</b>
+          <b class="b">28</b>
+          <b class="b1">5000</b>
+          <div class="rectangle-parent">
+            <div class="group-inner"></div>
+            <div class="rectangle-div"></div>
+            <div class="group-child1"></div>
+            <b class="following">Following</b>
+            <div class="group-child2"></div>
+            <b class="follwers">Follwers</b>
+            <b class="post">Post</b>
+            <b class="projects">Projects</b>
+          </div>
+          <b class="student-at-delhi">Student at Delhi Univercity</b>
+          <b class="post1">Post</b>
+          <b class="followers">Followers</b>
+          <b class="b2">2</b>
+          <b class="following1">Following</b>
+          <b class="b3">100</b>
+          <b class="projects1">Projects</b>
+          <b class="delhi-india">Delhi, India</b>
+          <img class="image-15-icon" alt="" src="./public/image-15@2x.png" />
+        </div>
+        <img class="photo-icon" alt="" src="./public/photo.svg" />
+
+        <div class="frame-item"></div>
+        <b class="mr-raj-major1">Mr. RAJ MAJOR</b>
+        <b class="b4">28</b>
+        <b class="b5">5000</b>
+        <div class="student-at-delhi1">Student at Delhi Univercity</div>
+        <div class="post2">Post</div>
+        <div class="followers1">Followers</div>
+        <b class="b6">2</b>
+        <div class="following2">Following</div>
+        <b class="b7">100</b>
+        <div class="projects2">Projects</div>
+        <div class="delhi-india1">Delhi, India</div>
+        <img class="image-15-icon1" alt="" src="./public/image-15@2x.png" />
+
+        <img class="frame-inner" alt="" src="./public/ellipse-53.svg" />
+
+        <div class="group-wrapper">
+          <div class="group-container">
+            <div class="group-container">
+              <div class="group-container">
+                <div class="group-container">
+                  <div class="techtolk">TechTOLK</div>
+                  <button class="me" autofocus="{true}" id="me" me>Me</button>
+                  <b class="add">Add</b>
+                  <button class="home" autofocus="{true}" id="home" home>
+                    Home
+                  </button>
+                  <b class="people">People</b>
+                  <b class="message">Message</b>
+                  <div class="group-div">
+                    <div class="rectangle-group">
+                      <div class="group-child3"></div>
+                      <div class="search">Search</div>
+                      <div class="ellipse-div"></div>
+                    </div>
+                    <img
+                      class="ellipse-icon"
+                      alt=""
+                      src="./public/ellipse-65.svg"
+                    />
+
+                    <img
+                      class="group-child4"
+                      alt=""
+                      src="./public/ellipse-65.svg"
+                    />
+
+                    <img
+                      class="group-child5"
+                      alt=""
+                      src="./public/ellipse-65.svg"
+                    />
+
+                    <img
+                      class="group-child6"
+                      alt=""
+                      src="./public/ellipse-65.svg"
+                    />
+
+                    <img
+                      class="group-child7"
+                      alt=""
+                      src="./public/ellipse-65.svg"
+                    />
+
+                    <img
+                      class="vector-icon2"
+                      alt=""
+                      src="./public/vector2.svg"
+                    />
+
+                    <img
+                      class="vector-icon3"
+                      alt=""
+                      src="./public/vector3.svg"
+                    />
+
+                    <img
+                      class="vector-icon4"
+                      alt=""
+                      src="./public/vector4.svg"
+                    />
+
+                    <img
+                      class="vector-icon5"
+                      alt=""
+                      src="./public/vector5.svg"
+                    />
+
+                    <img
+                      class="vector-icon6"
+                      alt=""
+                      src="./public/vector6.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <img class="vector-icon7" alt="" src="./public/vector7.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="rectangle-container">
+          <div class="group-child8"></div>
+          <b class="settings">Settings</b>
+          <div class="group-child9"></div>
+          <a href="Me_Following.html"class="group-child9"></a>
+
+          <div class="group-child10"></div>
+          <a href="Me_Post.html"class="group-child10"></a>
+
+          <div class="group-child11"></div>
+          <a href="Me_Project.html"class="group-child11"></a>
+
+          <b class="following3">Following</b>
+          <div class="group-child12"></div>
+          <a href="Me_Followers.html"class="group-child12"></a>
+          <b class="follwers1">Follwers</b>
+          <b class="post3">Post</b>
+          <b class="projects3">Projects</b>
+        </div>
+      </div>
+      <div class="mefollowers-child"></div>
+      <div class="frame-div">
+        <div class="rectangle-parent1">
+          <div class="group-child13"></div>
+          <div class="group-child14"></div>
+          <div class="group-child15"></div>
+          <div class="group-child16"></div>
+          <div class="rajshthan">Rajshthan</div>
+          <div class="student-at-gujrat">
+            Student at Gujrat technological univercity
+          </div>
+          <div class="rajshthan1">Rajshthan</div>
+          <div class="student-at-gujrat1">
+            Student at Gujrat technological univercity
+          </div>
+          <div class="delhi">Delhi</div>
+          <div class="student-at-delhi2">Student at Delhi Univercity</div>
+          <div class="delhi1">Delhi</div>
+          <div class="student-at-delhi3">Student at Delhi Univercity</div>
+          <div class="mr-yash-jack">Mr. Yash Jack</div>
+          <div class="mr-yash-jack1">Mr. Yash Jack</div>
+          <div class="mr-raj-major2">Mr. Raj major</div>
+          <div class="mr-raj-major3">Mr. Raj major</div>
+          <img class="group-child17" alt="" src="./public/ellipse-56.svg" />
+
+          <img class="group-child18" alt="" src="./public/ellipse-56.svg" />
+
+          <img class="group-child19" alt="" src="./public/ellipse-56.svg" />
+
+          <img class="group-child20" alt="" src="./public/ellipse-56.svg" />
+
+          <img class="image-7-icon" alt="" src="./public/image-7@2x.png" />
+
+          <img class="image-9-icon" alt="" src="./public/image-9@2x.png" />
+
+          <img class="image-10-icon" alt="" src="./public/image-7@2x.png" />
+
+          <img class="image-13-icon" alt="" src="./public/image-13@2x.png" />
+
+          <div class="rectangle-parent2">
+            <div class="group-child21"></div>
+            <div class="group-child22"></div>
+            <div class="delhi2">Delhi</div>
+            <div class="student-at-delhi4">Student at Delhi Univercity</div>
+            <div class="delhi3">Delhi</div>
+            <div class="student-at-delhi5">Student at Delhi Univercity</div>
+            <div class="ms-mauri-jack">Ms. Mauri jack</div>
+            <div class="ms-mauri-jack1">Ms. Mauri jack</div>
+            <img class="group-child23" alt="" src="./public/ellipse-56.svg" />
+
+            <img class="group-child24" alt="" src="./public/ellipse-56.svg" />
+
+            <img class="image-5-icon" alt="" src="./public/image-7@2x.png" />
+
+            <img class="image-11-icon" alt="" src="./public/image-13@2x.png" />
+
+            <div class="group-child21"></div>
+            <div class="group-child22"></div>
+            <div class="delhi2">Delhi</div>
+            <div class="student-at-delhi4">Student at Delhi Univercity</div>
+            <div class="delhi3">Delhi</div>
+            <div class="student-at-delhi5">Student at Delhi Univercity</div>
+            <div class="ms-mauri-jack">Ms. Mauri jack</div>
+            <div class="ms-mauri-jack1">Ms. Mauri jack</div>
+            <img class="group-child23" alt="" src="./public/ellipse-56.svg" />
+
+            <img class="group-child24" alt="" src="./public/ellipse-56.svg" />
+
+            <img class="image-5-icon" alt="" src="./public/image-7@2x.png" />
+
+            <img class="image-11-icon" alt="" src="./public/image-13@2x.png" />
+          </div>
+          <div class="rectangle-parent3">
+            <div class="group-child29"></div>
+            <div class="group-child30"></div>
+            <div class="gujrat">Gujrat</div>
+            <div class="student-at-gujrat2">
+              Student at Gujrat technological univercity
+            </div>
+            <div class="gujrat1">Gujrat</div>
+            <div class="student-at-gujrat3">
+              Student at Gujrat technological univercity
+            </div>
+            <div class="mr-yash-major">Mr. Yash Major</div>
+            <div class="mr-yash-major1">Mr. Yash Major</div>
+            <img class="group-child31" alt="" src="./public/ellipse-56.svg" />
+
+            <img class="group-child32" alt="" src="./public/ellipse-56.svg" />
+
+            <img class="group-child32" alt="" src="./public/ellipse-56.svg" />
+
+            <img class="image-6-icon" alt="" src="./public/image-7@2x.png" />
+
+            <img class="image-12-icon" alt="" src="./public/image-13@2x.png" />
+
+            <div class="rectangle-parent4">
+              <div class="group-child34"></div>
+              <div class="group-child35"></div>
+              <div class="delhi6">Delhi</div>
+              <div class="student-at-delhi8">Student at Delhi Univercity</div>
+              <div class="delhi7">Delhi</div>
+              <div class="student-at-delhi9">Student at Delhi Univercity</div>
+              <div class="ms-mauri-jack4">Ms. Mauri jack</div>
+              <div class="ms-mauri-jack5">Ms. Mauri jack</div>
+              <img class="group-child36" alt="" src="./public/ellipse-56.svg" />
+
+              <img class="group-child37" alt="" src="./public/ellipse-56.svg" />
+
+              <img class="image-5-icon1" alt="" src="./public/image-7@2x.png" />
+
+              <div class="group-child38"></div>
+              <div class="group-child39"></div>
+              <img
+                class="image-11-icon1"
+                alt=""
+                src="./public/image-13@2x.png"
+              />
+
+              <img
+                class="image-14-traced"
+                alt=""
+                src="./public/image-14-traced.svg"
+              />
+
+              <img
+                class="image-14-traced1"
+                alt=""
+                src="./public/image-14-traced.svg"
+              />
+
+              <div class="group-child34"></div>
+              <div class="group-child35"></div>
+              <div class="delhi6">Delhi</div>
+              <div class="student-at-delhi8">Student at Delhi Univercity</div>
+              <div class="delhi7">Delhi</div>
+              <div class="student-at-delhi9">Student at Delhi Univercity</div>
+              <div class="ms-mauri-jack4">Ms. Mauri jack</div>
+              <div class="ms-mauri-jack5">Ms. Mauri jack</div>
+              <img class="group-child36" alt="" src="./public/ellipse-56.svg" />
+
+              <img class="group-child37" alt="" src="./public/ellipse-56.svg" />
+
+              <img class="image-5-icon1" alt="" src="./public/image-7@2x.png" />
+
+              <div class="group-child38"></div>
+              <div class="group-child39"></div>
+              <img
+                class="image-11-icon1"
+                alt=""
+                src="./public/image-13@2x.png"
+              />
+
+              <img
+                class="image-14-traced"
+                alt=""
+                src="./public/image-14-traced.svg"
+              />
+
+              <img
+                class="image-14-traced1"
+                alt=""
+                src="./public/image-14-traced.svg"
+              />
+
+              <img class="group-icon" alt="" src="./public/group-259.svg" />
+
+              <img class="group-child46" alt="" src="./public/group-259.svg" />
+
+              <img class="group-child47" alt="" src="./public/group-259.svg" />
+
+              <img class="group-child48" alt="" src="./public/group-259.svg" />
+            </div>
+          </div>
+          <div class="rectangle-parent5">
+            <div class="group-child49"></div>
+            <div class="group-child50"></div>
+            <div class="gujrat2">Gujrat</div>
+            <div class="student-at-gujrat4">
+              Student at Gujrat technological univercity
+            </div>
+            <div class="gujrat3">Gujrat</div>
+            <div class="student-at-gujrat5">
+              Student at Gujrat technological univercity
+            </div>
+            <div class="mr-yash-major2">Mr. Yash Major</div>
+            <div class="mr-yash-major3">Mr. Yash Major</div>
+            <img class="group-child51" alt="" src="./public/ellipse-56.svg" />
+
+            <img class="group-child52" alt="" src="./public/ellipse-56.svg" />
+
+            <img class="group-child52" alt="" src="./public/ellipse-56.svg" />
+
+            <img class="image-6-icon1" alt="" src="./public/image-7@2x.png" />
+
+            <img class="image-12-icon1" alt="" src="./public/image-13@2x.png" />
+
+            <div class="rectangle-parent6">
+              <div class="group-child21"></div>
+              <div class="group-child22"></div>
+              <div class="delhi2">Delhi</div>
+              <div class="student-at-delhi4">Student at Delhi Univercity</div>
+              <div class="delhi3">Delhi</div>
+              <div class="student-at-delhi5">Student at Delhi Univercity</div>
+              <div class="ms-mauri-jack">Ms. Mauri jack</div>
+              <div class="ms-mauri-jack1">Ms. Mauri jack</div>
+              <img class="group-child23" alt="" src="./public/ellipse-56.svg" />
+
+              <img class="group-child24" alt="" src="./public/ellipse-56.svg" />
+
+              <img class="image-5-icon" alt="" src="./public/image-7@2x.png" />
+
+              <img
+                class="image-11-icon"
+                alt=""
+                src="./public/image-13@2x.png"
+              />
+
+              <div class="group-child21"></div>
+              <div class="group-child22"></div>
+              <div class="delhi2">Delhi</div>
+              <div class="student-at-delhi4">Student at Delhi Univercity</div>
+              <div class="delhi3">Delhi</div>
+              <div class="student-at-delhi5">Student at Delhi Univercity</div>
+              <div class="ms-mauri-jack">Ms. Mauri jack</div>
+              <div class="ms-mauri-jack1">Ms. Mauri jack</div>
+              <img class="group-child23" alt="" src="./public/ellipse-56.svg" />
+
+              <img class="group-child24" alt="" src="./public/ellipse-56.svg" />
+
+              <img class="image-5-icon" alt="" src="./public/image-7@2x.png" />
+
+              <img
+                class="image-11-icon"
+                alt=""
+                src="./public/image-13@2x.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="rectangle-parent1">
+          <div class="group-child13"></div>
+          <div class="group-child14"></div>
+          <div class="group-child15"></div>
+          <div class="group-child16"></div>
+          <div class="rajshthan">Rajshthan</div>
+          <div class="student-at-gujrat">
+            Student at Gujrat technological univercity
+          </div>
+          <div class="rajshthan1">Rajshthan</div>
+          <div class="student-at-gujrat1">
+            Student at Gujrat technological univercity
+          </div>
+          <div class="delhi">Delhi</div>
+          <div class="student-at-delhi2">Student at Delhi Univercity</div>
+          <div class="delhi1">Delhi</div>
+          <div class="student-at-delhi3">Student at Delhi Univercity</div>
+          <div class="mr-yash-jack">Mr. Yash Jack</div>
+          <div class="mr-yash-jack1">Mr. Yash Jack</div>
+          <div class="mr-raj-major2">Mr. Raj major</div>
+          <div class="mr-raj-major3">Mr. Raj major</div>
+          <img class="group-child17" alt="" src="./public/ellipse-53.svg" />
+
+          <img class="group-child18" alt="" src="./public/ellipse-53.svg" />
+
+          <img class="group-child19" alt="" src="./public/ellipse-53.svg" />
+
+          <img class="group-child20" alt="" src="./public/ellipse-53.svg" />
+
+          <img class="image-7-icon1" alt="" src="./public/image-71@2x.png" />
+
+          <img class="image-9-icon1" alt="" src="./public/image-71@2x.png" />
+
+          <img class="image-10-icon1" alt="" src="./public/image-71@2x.png" />
+
+          <img class="image-13-icon1" alt="" src="./public/image-71@2x.png" />
+
+          <div class="rectangle-parent2">
+            <div class="group-child21"></div>
+            <div class="group-child22"></div>
+            <div class="delhi2">Delhi</div>
+            <div class="student-at-delhi4">Student at Delhi Univercity</div>
+            <div class="delhi3">Delhi</div>
+            <div class="student-at-delhi5">Student at Delhi Univercity</div>
+            <div class="ms-mauri-jack">Ms. Mauri jack</div>
+            <div class="ms-mauri-jack1">Ms. Mauri jack</div>
+            <img class="group-child23" alt="" src="./public/ellipse-53.svg" />
+
+            <img class="group-child24" alt="" src="./public/ellipse-53.svg" />
+
+            <img class="image-5-icon3" alt="" src="./public/image-71@2x.png" />
+
+            <img class="image-11-icon3" alt="" src="./public/image-71@2x.png" />
+
+            <div class="group-child21"></div>
+            <div class="group-child22"></div>
+            <div class="delhi2">Delhi</div>
+            <div class="student-at-delhi4">Student at Delhi Univercity</div>
+            <div class="delhi3">Delhi</div>
+            <div class="student-at-delhi5">Student at Delhi Univercity</div>
+            <div class="ms-mauri-jack">Ms. Mauri jack</div>
+            <div class="ms-mauri-jack1">Ms. Mauri jack</div>
+            <img class="group-child23" alt="" src="./public/ellipse-53.svg" />
+
+            <img class="group-child24" alt="" src="./public/ellipse-53.svg" />
+
+            <img class="image-5-icon3" alt="" src="./public/image-71@2x.png" />
+
+            <img class="image-11-icon3" alt="" src="./public/image-71@2x.png" />
+          </div>
+          <div class="rectangle-parent5">
+            <div class="group-child49"></div>
+            <div class="group-child50"></div>
+            <div class="gujrat2">Gujrat</div>
+            <div class="student-at-gujrat4">
+              Student at Gujrat technological univercity
+            </div>
+            <div class="gujrat3">Gujrat</div>
+            <div class="student-at-gujrat5">
+              Student at Gujrat technological univercity
+            </div>
+            <div class="mr-yash-major2">Mr. Yash Major</div>
+            <div class="mr-yash-major3">Mr. Yash Major</div>
+            <img class="group-child51" alt="" src="./public/ellipse-53.svg" />
+
+            <img class="group-child52" alt="" src="./public/ellipse-53.svg" />
+
+            <img class="group-child52" alt="" src="./public/ellipse-53.svg" />
+
+            <img class="image-6-icon2" alt="" src="./public/image-71@2x.png" />
+
+            <img class="image-12-icon2" alt="" src="./public/image-71@2x.png" />
+
+            <div class="rectangle-parent6">
+              <div class="group-child21"></div>
+              <div class="group-child22"></div>
+              <div class="delhi2">Delhi</div>
+              <div class="student-at-delhi4">Student at Delhi Univercity</div>
+              <div class="delhi3">Delhi</div>
+              <div class="student-at-delhi5">Student at Delhi Univercity</div>
+              <div class="ms-mauri-jack">Ms. Mauri jack</div>
+              <div class="ms-mauri-jack1">Ms. Mauri jack</div>
+              <img class="group-child23" alt="" src="./public/ellipse-53.svg" />
+
+              <img class="group-child24" alt="" src="./public/ellipse-53.svg" />
+
+              <img
+                class="image-5-icon3"
+                alt=""
+                src="./public/image-71@2x.png"
+              />
+
+              <div class="group-child87"></div>
+              <div class="group-child88"></div>
+              <img
+                class="image-11-icon3"
+                alt=""
+                src="./public/image-71@2x.png"
+              />
+
+              <img
+                class="image-14-traced4"
+                alt=""
+                src="./public/ellipse-53.svg"
+              />
+
+              <img
+                class="image-14-traced5"
+                alt=""
+                src="./public/ellipse-53.svg"
+              />
+
+              <div class="group-child21"></div>
+              <div class="group-child22"></div>
+              <div class="delhi2">Delhi</div>
+              <div class="student-at-delhi4">Student at Delhi Univercity</div>
+              <div class="delhi3">Delhi</div>
+              <div class="student-at-delhi5">Student at Delhi Univercity</div>
+              <div class="ms-mauri-jack">Ms. Mauri jack</div>
+              <div class="ms-mauri-jack1">Ms. Mauri jack</div>
+              <img class="group-child23" alt="" src="./public/ellipse-53.svg" />
+
+              <img class="group-child24" alt="" src="./public/ellipse-53.svg" />
+
+              <img
+                class="image-5-icon3"
+                alt=""
+                src="./public/image-71@2x.png"
+              />
+
+              <div class="group-child87"></div>
+              <div class="group-child88"></div>
+              <img
+                class="image-11-icon3"
+                alt=""
+                src="./public/image-71@2x.png"
+              />
+
+              <img
+                class="image-14-traced4"
+                alt=""
+                src="./public/ellipse-53.svg"
+              />
+
+              <img
+                class="image-14-traced5"
+                alt=""
+                src="./public/ellipse-53.svg"
+              />
+            </div>
+          </div>
+          <div class="rectangle-parent5">
+            <div class="group-child49"></div>
+            <div class="group-child50"></div>
+            <div class="gujrat2">Gujrat</div>
+            <div class="student-at-gujrat4">
+              Student at Gujrat technological univercity
+            </div>
+            <div class="gujrat3">Gujrat</div>
+            <div class="student-at-gujrat5">
+              Student at Gujrat technological univercity
+            </div>
+            <div class="mr-yash-major2">Mr. Yash Major</div>
+            <div class="mr-yash-major3">Mr. Yash Major</div>
+            <img class="group-child51" alt="" src="./public/ellipse-53.svg" />
+
+            <img class="group-child52" alt="" src="./public/ellipse-53.svg" />
+
+            <img class="group-child52" alt="" src="./public/ellipse-53.svg" />
+
+            <img class="image-6-icon2" alt="" src="./public/image-71@2x.png" />
+
+            <img class="image-12-icon2" alt="" src="./public/image-71@2x.png" />
+
+            <div class="rectangle-parent6">
+              <div class="group-child21"></div>
+              <div class="group-child22"></div>
+              <div class="delhi2">Delhi</div>
+              <div class="student-at-delhi4">Student at Delhi Univercity</div>
+              <div class="delhi3">Delhi</div>
+              <div class="student-at-delhi5">Student at Delhi Univercity</div>
+              <div class="ms-mauri-jack">Ms. Mauri jack</div>
+              <div class="ms-mauri-jack1">Ms. Mauri jack</div>
+              <img class="group-child23" alt="" src="./public/ellipse-53.svg" />
+
+              <img class="group-child24" alt="" src="./public/ellipse-53.svg" />
+
+              <img
+                class="image-5-icon3"
+                alt=""
+                src="./public/image-71@2x.png"
+              />
+
+              <img
+                class="image-11-icon3"
+                alt=""
+                src="./public/image-71@2x.png"
+              />
+
+              <div class="group-child21"></div>
+              <div class="group-child22"></div>
+              <div class="delhi2">Delhi</div>
+              <div class="student-at-delhi4">Student at Delhi Univercity</div>
+              <div class="delhi3">Delhi</div>
+              <div class="student-at-delhi5">Student at Delhi Univercity</div>
+              <div class="ms-mauri-jack">Ms. Mauri jack</div>
+              <div class="ms-mauri-jack1">Ms. Mauri jack</div>
+              <img class="group-child23" alt="" src="./public/ellipse-53.svg" />
+
+              <img class="group-child24" alt="" src="./public/ellipse-53.svg" />
+
+              <img
+                class="image-5-icon3"
+                alt=""
+                src="./public/image-71@2x.png"
+              />
+
+              <img
+                class="image-11-icon3"
+                alt=""
+                src="./public/image-71@2x.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

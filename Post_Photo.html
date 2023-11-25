@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+<style>
+  body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-6xl: 25px;
+  --font-size-xs: 12px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-darkslateblue: #706299;
+
+  /* Border radiuses */
+  --br-31xl: 50px;
+  --br-11xl: 30px;
+}
+.me,
+.techtolk {
+  position: absolute;
+  display: inline-block;
+}
+.techtolk {
+  height: 85.9%;
+  width: 32.8%;
+  top: 0;
+  left: 0;
+  font-size: 65px;
+  color: #d7d6f3;
+  text-align: left;
+}
+.me {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 5.45%;
+  top: 75.64%;
+  left: 71.82%;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+}
+.add1 {
+  top: 76.92%;
+  left: 77.35%;
+}
+.add1,
+.home,
+.message,
+.people {
+  position: absolute;
+  width: 5.45%;
+  display: inline-block;
+}
+.home {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 80.77%;
+  left: 94.55%;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+}
+.message,
+.people {
+  top: 79.49%;
+  left: 88.71%;
+}
+.message {
+  top: 76.92%;
+  left: 82.88%;
+}
+.group-child {
+  border: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-31xl);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+}
+.search {
+  position: absolute;
+  height: 55%;
+  width: 25.34%;
+  top: 15%;
+  left: 10.45%;
+  display: inline-block;
+}
+.group-item {
+  position: absolute;
+  height: 83.33%;
+  width: 7.71%;
+  top: 8.33%;
+  right: 91.5%;
+  bottom: 8.33%;
+  left: 0.79%;
+  border-radius: 50%;
+  background-color: #c2adff;
+}
+.rectangle-parent {
+  position: absolute;
+  height: 100%;
+  width: 61.67%;
+  top: 0;
+  right: 38.33%;
+  bottom: 0;
+  left: 0;
+}
+.ellipse-icon,
+.group-child1,
+.group-child2,
+.group-child3,
+.group-inner {
+  position: absolute;
+  height: 80%;
+  width: 5.07%;
+  top: 0;
+  right: 23.97%;
+  bottom: 20%;
+  left: 70.96%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.ellipse-icon,
+.group-child1,
+.group-child2,
+.group-child3 {
+  right: 31.68%;
+  left: 63.25%;
+}
+.group-child1,
+.group-child2,
+.group-child3 {
+  right: 0;
+  left: 94.93%;
+}
+.group-child2,
+.group-child3 {
+  right: 8.13%;
+  left: 86.8%;
+}
+.group-child3 {
+  right: 16.26%;
+  left: 78.67%;
+}
+.vector-icon,
+.vector-icon1,
+.vector-icon2,
+.vector-icon3,
+.vector-icon4 {
+  position: absolute;
+  height: 41.67%;
+  width: 2.64%;
+  top: 28.33%;
+  right: 95.99%;
+  bottom: 30%;
+  left: 1.37%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon1,
+.vector-icon2,
+.vector-icon3,
+.vector-icon4 {
+  top: 20%;
+  right: 17.53%;
+  bottom: 38.33%;
+  left: 79.83%;
+}
+.vector-icon2,
+.vector-icon3,
+.vector-icon4 {
+  right: 9.4%;
+  left: 87.96%;
+}
+.vector-icon3,
+.vector-icon4 {
+  right: 1.27%;
+  left: 96.09%;
+}
+.vector-icon4 {
+  right: 32.95%;
+  left: 64.41%;
+}
+.group-parent {
+  position: absolute;
+  height: 76.92%;
+  width: 71.74%;
+  top: 14.1%;
+  right: 0.91%;
+  bottom: 8.97%;
+  left: 27.35%;
+  font-size: 32px;
+  color: #000;
+}
+.group-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.add-inner,
+.photo-icon {
+  width: 91.67%;
+  right: 4.17%;
+  left: 4.17%;
+}
+.add-inner {
+  position: absolute;
+  height: 7.62%;
+  top: 4.69%;
+  bottom: 87.7%;
+  font-size: var(--font-size-xs);
+}
+.photo-icon {
+  height: 79.98%;
+  top: 14.16%;
+  bottom: 5.86%;
+  border-radius: var(--br-11xl);
+}
+.image-16-icon,
+.photo-icon,
+.photo-icon1,
+.photo-icon2 {
+  position: absolute;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.photo-icon1 {
+  height: 68.26%;
+  width: 83.33%;
+  top: 20.02%;
+  right: 8.33%;
+  bottom: 11.72%;
+  left: 8.33%;
+  border-radius: var(--br-11xl);
+}
+.image-16-icon,
+.photo-icon2 {
+  left: 12.5%;
+}
+.photo-icon2 {
+  height: 47.85%;
+  width: 75%;
+  top: 32.91%;
+  right: 12.5%;
+  bottom: 19.24%;
+  border-radius: var(--br-11xl);
+}
+.image-16-icon {
+  height: 6.84%;
+  width: 4.86%;
+  top: 22.95%;
+  right: 82.64%;
+  bottom: 70.21%;
+  object-fit: cover;
+}
+.mr-raj-major {
+  position: absolute;
+  top: 255px;
+  left: 309px;
+  font-weight: 300;
+}
+.add-child {
+  cursor: pointer;
+  border: 1px solid var(--color-white);
+  left: 240px;
+}
+.add-child,
+.add-item,
+.rectangle-button {
+  padding: 0;
+  background-color: var(--color-darkslateblue);
+  position: absolute;
+  top: 840px;
+  border-radius: var(--br-11xl);
+  box-sizing: border-box;
+  width: 250px;
+  height: 50px;
+}
+.add-item {
+  border: 0;
+  left: 595px;
+  border-top: 1px solid var(--color-white);
+  border-right: 1px solid var(--color-white);
+  border-bottom: 4px solid var(--color-white);
+  border-left: 4px solid var(--color-white);
+}
+.rectangle-button {
+  cursor: pointer;
+  border: 1px solid var(--color-white);
+  left: 950px;
+}
+.article,
+.file,
+.post {
+  position: absolute;
+  top: 850px;
+  left: 693px;
+  font-weight: 300;
+}
+.article,
+.file {
+  left: 1054px;
+}
+.article {
+  left: 327px;
+}
+.vector-icon5 {
+  position: absolute;
+  height: 2.93%;
+  width: 2.08%;
+  top: 6.74%;
+  right: 21.39%;
+  bottom: 90.33%;
+  left: 76.53%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.rectangle-div {
+  position: absolute;
+  top: 623px;
+  left: 240px;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-darkslateblue);
+  border: 1px solid var(--color-white);
+  box-sizing: border-box;
+  width: 960px;
+  height: 150px;
+}
+.caption {
+  position: absolute;
+  top: 637px;
+  left: 503px;
+  font-size: 100px;
+  font-weight: 300;
+  color: rgba(152, 134, 207, 0.45);
+}
+.rectangle-icon {
+  position: absolute;
+  top: 357px;
+  left: 565px;
+  border-radius: var(--br-31xl);
+  width: 296px;
+  height: 251px;
+  object-fit: cover;
+}
+.group-icon,
+.rectangle-a {
+  position: absolute;
+  top: 373px;
+  left: 603px;
+  width: 220px;
+  height: 220px;
+}
+.rectangle-a {
+  text-decoration: none;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-darkslateblue);
+  border: 1px solid var(--color-white);
+  box-sizing: border-box;
+  width: 300px;
+  height: 50px;
+}
+.collab-with {
+  position: absolute;
+  top: 10px;
+  left: 34px;
+  font-weight: 300;
+}
+.arrow-icon {
+  position: absolute;
+  top: 22.64px;
+  left: 263.64px;
+  border-radius: 1px;
+  width: 14.73px;
+  height: 8.36px;
+}
+.rectangle-group {
+  position: absolute;
+  top: 708px;
+  left: 850px;
+  width: 300px;
+  height: 50px;
+}
+.add {
+  position: relative;
+  background-color: #201b1b;
+  width: 100%;
+  height: 1024px;
+  overflow-x: auto;
+  text-align: center;
+  font-size: var(--font-size-6xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+
+</style>
+  </head>
+  <body>
+    <div class="add">
+      <div class="add-inner">
+        <div class="group-wrapper">
+          <div class="group-wrapper">
+            <div class="techtolk">TechTOLK</div>
+            <button class="me" autofocus="{true}" id="me" me>Me</button>
+            <b class="add1">Add</b>
+            <button class="home" id="hm" hm>Home</button>
+            <b class="people">People</b>
+            <b class="message">Message</b>
+            <div class="group-parent">
+              <div class="rectangle-parent">
+                <input class="group-child" type="search" />
+
+                <div class="search">Search</div>
+                <div class="group-item"></div>
+              </div>
+              <img class="group-inner" alt="" src="./public/ellipse-65.svg" />
+
+              <img class="ellipse-icon" alt="" src="./public/ellipse-65.svg" />
+
+              <img class="group-child1" alt="" src="./public/ellipse-65.svg" />
+
+              <img class="group-child2" alt="" src="./public/ellipse-65.svg" />
+
+              <img class="group-child3" alt="" src="./public/ellipse-65.svg" />
+
+              <img class="vector-icon" alt="" src="./public/vector.svg" />
+
+              <img class="vector-icon1" alt="" src="./public/vector1.svg" />
+
+              <img class="vector-icon2" alt="" src="./public/vector2.svg" />
+
+              <img class="vector-icon3" alt="" src="./public/vector3.svg" />
+
+              <img class="vector-icon4" alt="" src="./public/vector4.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="photo-icon" alt="" src="./public/photo.svg" />
+
+      <img class="photo-icon1" alt="" src="./public/photo1.svg" />
+
+      <img class="photo-icon2" alt="" src="./public/photo2.svg" />
+
+      <img class="image-16-icon" alt="" src="./public/image-16@2x.png" />
+
+      <div class="mr-raj-major">Mr. Raj major</div>
+
+      <button class="add-child" autofocus="{true}" id="article "></button>
+      <a href="Post_Articals.html"class="add-child"></a>
+
+      <button class="add-item" autofocus="{true}" disabled="{true}"></button>
+      <a href="Post_Photo.html"class="add-item"></a>
+
+      <button
+        class="rectangle-button"
+        autofocus="{true}"
+        id="file"
+        file
+      ></button>
+      <a href="Post_File.html" class="rectangle-button"></a>
+
+      <div class="post">Post</div>
+      <div class="file">File</div>
+      <div class="article">Article</div>
+      <img class="vector-icon5" alt="" src="./public/vector5.svg" />
+
+      <div class="rectangle-div"></div>
+      <div class="caption">(Caption)</div>
+      <img class="rectangle-icon" alt="" src="./public/rectangle-112@2x.png" />
+
+      <img class="group-icon" alt="" src="./public/group-203.svg" />
+
+      <div class="rectangle-group">
+        <a class="rectangle-a"> </a>
+        <div class="collab-with">Collab with</div>
+        <img class="arrow-icon" alt="" src="./public/arrow-4.svg" />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <style>
+      body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-6xl: 25px;
+  --font-size-mini: 15px;
+  --font-size-8xl: 27px;
+
+  /* Colors */
+  --color-gray-100: #777;
+  --color-gray-200: #201b1b;
+  --color-white: #fff;
+  --color-mediumblue: rgba(0, 56, 255, 0.2);
+  --color-black: #000;
+  --color-plum: #c2adff;
+
+  /* Border radiuses */
+  --br-xl: 20px;
+  --br-31xl: 50px;
+}
+.techtok {
+  position: absolute;
+  top: 37px;
+  left: 60px;
+  font-size: 65px;
+  color: #d7d6f3;
+  display: inline-block;
+  width: 433px;
+  height: 133px;
+}
+.sign-in-page-child {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-plum);
+  position: absolute;
+  top: 589px;
+  left: 389px;
+  border-radius: var(--br-31xl);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  width: 700px;
+  height: 55px;
+}
+.agree-join {
+  position: absolute;
+  top: 602px;
+  left: 625px;
+  font-size: 32px;
+  color: var(--color-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 208.49px;
+  height: 28.39px;
+}
+.user-agreement {
+  color: var(--color-plum);
+}
+.by-clicking-agree-container1 {
+  line-break: anywhere;
+  width: 100%;
+}
+.by-clicking-agree-container {
+  position: absolute;
+  top: 538px;
+  left: 394px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  width: 753.4px;
+  height: 28.39px;
+}
+.sign-in-page-item {
+  position: absolute;
+  top: 757px;
+  left: 389px;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-gray-200);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 2px solid var(--color-mediumblue);
+  box-sizing: border-box;
+  width: 700px;
+  height: 55px;
+}
+.continue-with-google,
+.or {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 28.39px;
+}
+.continue-with-google {
+  top: 770px;
+  left: 512px;
+  font-size: 35px;
+  text-align: center;
+  justify-content: center;
+  width: 461.84px;
+}
+.or {
+  top: 689px;
+  left: 731.32px;
+  font-size: 23px;
+  width: 24.09px;
+}
+.line-div,
+.sign-in-page-inner {
+  position: absolute;
+  top: 703.51px;
+  left: 363.5px;
+  border-top: 3px solid var(--color-gray-100);
+  box-sizing: border-box;
+  width: 351.87px;
+  height: 3px;
+}
+.line-div {
+  left: 762.21px;
+}
+.already-on-tech-container {
+  position: absolute;
+  top: 834px;
+  left: 453px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 556px;
+  height: 39px;
+}
+.rectangle-button,
+.sign-in-page-child1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  top: 32px;
+  border-radius: var(--br-31xl);
+  width: 220px;
+  height: 50px;
+}
+.rectangle-button {
+  left: 1160px;
+  box-shadow: 4px 4px 10px 4px #4e446a;
+  border-bottom: 10px solid var(--color-plum);
+  border-left: 5px solid var(--color-plum);
+  box-sizing: border-box;
+}
+.sign-in-page-child1 {
+  left: 914px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+}
+.join-now,
+.sign-in {
+  position: absolute;
+  top: 41px;
+  left: 1227px;
+  font-size: var(--font-size-8xl);
+  color: var(--color-black);
+  text-align: center;
+}
+.join-now {
+  left: 967px;
+}
+.rectangle-div {
+  position: absolute;
+  top: 140px;
+  left: 380px;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-gray-200);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  border-top: 1.5px solid var(--color-mediumblue);
+  border-right: 7px solid var(--color-mediumblue);
+  border-bottom: 10px solid var(--color-mediumblue);
+  border-left: 1px solid var(--color-mediumblue);
+  box-sizing: border-box;
+  width: 1000px;
+  height: 90px;
+}
+.make-the-most {
+  position: absolute;
+  top: 57px;
+  left: 408px;
+  font-size: 45px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  width: 945px;
+  height: 237px;
+}
+.rectangle-input,
+.sign-in-page-child2 {
+  border: 0;
+  background-color: #fff;
+  position: absolute;
+  top: 461px;
+  left: 389px;
+  border-radius: var(--br-xl);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) inset;
+  border-top: 1px solid var(--color-mediumblue);
+  border-right: 1.5px solid var(--color-mediumblue);
+  border-bottom: 4px solid var(--color-mediumblue);
+  border-left: 0.5px solid var(--color-mediumblue);
+  box-sizing: border-box;
+  width: 700px;
+  height: 55px;
+}
+.sign-in-page-child2 {
+  top: 324px;
+}
+.email-or-phone {
+  position: absolute;
+  top: 274px;
+  left: 398px;
+  display: flex;
+  align-items: center;
+  width: 251px;
+  height: 39px;
+}
+.div,
+.techtolk {
+  position: absolute;
+  font-size: var(--font-size-mini);
+}
+.techtolk {
+  top: 967px;
+  left: 127px;
+  display: inline-block;
+  width: 75px;
+  height: 18px;
+}
+.div {
+  top: 960px;
+  left: 239px;
+  display: flex;
+  align-items: center;
+  width: 91px;
+  height: 31px;
+}
+.blank-line {
+  margin: 0;
+}
+.about-accessibility-user-container,
+.password {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.about-accessibility-user-container {
+  top: 892px;
+  left: 317px;
+  font-size: var(--font-size-mini);
+  white-space: pre-wrap;
+  width: 1269px;
+  height: 149px;
+}
+.password {
+  top: 415px;
+  left: 394px;
+  width: 251px;
+  height: 39px;
+}
+.sign-in-page {
+  position: relative;
+  background-color: #21660fd1;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-6xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="sign-in-page">
+      <div class="techtok">TechTOK</div>
+      <button class="sign-in-page-child" id="join" join></button>
+      <a href="MAIN FEED.html" class="sign-in-page-child"></a>
+      <div class="agree-join">Agree & join</div>
+      <div class="by-clicking-agree-container">
+        <span class="by-clicking-agree-container1">
+          <span>By clicking Agree & Join, you agree to the LinkedIn </span>
+          <span class="user-agreement">User Agreement</span>
+          <span>, </span>
+          <span class="user-agreement">Privacy Policy</span>
+          <span>, and </span>
+          <span class="user-agreement">Cookie Policy.</span>
+        </span>
+      </div>
+      <div class="sign-in-page-item"></div>
+      <div class="continue-with-google">Continue with Google</div>
+      <div class="or">or</div>
+      <div class="sign-in-page-inner"></div>
+      <div class="line-div"></div>
+      <div class="already-on-tech-container">
+        <span class="by-clicking-agree-container1">
+          <span>Already on Tech TOK ? </span>
+          <span class="user-agreement">Sing in</span>
+        </span>
+      </div>
+      <button class="rectangle-button" id="sign" sign></button>
+      <button class="sign-in-page-child1" id="join" join></button>
+      <div class="sign-in">Sign in</div>
+      <div class="join-now">Join now</div>
+      <div class="rectangle-div"></div>
+      <div class="make-the-most">Make the most of your professional life</div>
+      <input class="rectangle-input" type="password" />
+
+      <input class="sign-in-page-child2" type="email" />
+
+      <div class="email-or-phone">Email or phone</div>
+      <div class="techtolk">TechTOLK</div>
+      <div class="div">@2024</div>
+      <div class="about-accessibility-user-container">
+        <span class="by-clicking-agree-container1">
+          <p class="blank-line">&nbsp;</p>
+          <p class="blank-line">
+            About Accessibility User Agreement Privacy Policy Cookie Policy
+            Copyright Policy Brand Policy Guest Controls Community Guidelines
+          </p>
+        </span>
+      </div>
+      <div class="password">Password</div>
+    </div>
+  </body>
+</html>
